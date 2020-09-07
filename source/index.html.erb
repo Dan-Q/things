@@ -17,14 +17,16 @@
       <ul>
         <% data.things.each do |thing| %>
           <li class="h-entry">
-            <a href="<%= thing.url || thing.about %>" class="u-url">
-              <h2 class="p-name"><%= thing.name %></h2>
-              <p class="e-content">
-                <%= thing.description %>
-              </p>
-              <% if thing.status %>
-                <p class="p-category"><%= thing.status %></p>
-              <% end %>
+            <a href="<%= thing.url || thing.about || thing.source %>" class="u-url"<%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
+              <div>
+                <h2 class="p-name"><%= thing.name %></h2>
+                <p class="e-content">
+                  <%= thing.description %>
+                </p>
+                <% if thing.status %>
+                  <p class="p-category"><%= thing.status %></p>
+                <% end %>                
+              </div>
             </a>
           </li>
         <% end %>

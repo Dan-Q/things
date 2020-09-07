@@ -1,6 +1,7 @@
 - name: Dan Q
   description: Dan's personal website and blog. Centre of the Digital Daniverse.
   url: https://danq.me/
+  image: dan-q.png
 
 - name: Dan Q's Things
   description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
@@ -9,33 +10,39 @@
 - name: Find Dan Q
   description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
   url: https://find.danq.me/
+  image: find.png
 
 - name: Fnorders
   description: A Fnorders-generator in the style of the Fnorder by Steve Jackson Games.
   url: https://fnorders.com/
   source: https://github.com/Dan-Q/Fnorders
   about: https://danq.me/2017/09/13/fnorders/
+  image: fnorders.png
 
 - name: Non-Stop Hammer Ti . me
   description: Break it down!
   url: https://nonstophammerti.me/
   source: https://github.com/Dan-Q/NonStopHammerTi.me
+  image: hammertime.png
 
 - name: We Will Rock . EU
   description: Whomp whomp tish. Whomp whomp tish.
   url: https://wewillrock.eu/
   source: https://github.com/Dan-Q/WeWillRock.eu
+  image: rockyou.png
 
 - name: TRRTL
   description: Coffee-drinking LOGO turtles.
   url: https://trrtl.com/
   source: https://github.com/Dan-Q/trrtl
+  image: trrtl.png
 
 - name: Break Into Us
   description: Lock-breaking puzzle game.
   url: https://breakinto.us/
   source: https://github.com/Dan-Q/Break-Into-Us
   about: https://danq.me/2020/06/27/break-into-us/
+  image: breakintous.png
 
 - name: Bodleian Advent Calendar
   status: Down
@@ -49,6 +56,7 @@
   url: https://dan-q.github.io/twee2/
   source: https://github.com/Dan-Q/twee2
   about: https://danq.me/2015/10/22/twee2/
+  image: twee2.png
 
 - name: Cheatman
   description: A game of hangman that cheats (while keeping its lies internally-consistent).
