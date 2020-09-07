@@ -7,18 +7,21 @@
     <%= stylesheet_link_tag 'things' %>
     <%= javascript_include_tag 'things' %>
   </head>
-  <body>
+  <body class="h-feed">
     <header>
-      <h1>
-        Dan Q's Things
+      <h1 class="p-name">
+        <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a>'s Things
       </h1>
     </header>
     <main>
       <ul>
         <% data.things.each do |thing| %>
-          <li>
-            <a href="<%= thing.url %>">
-              <%= thing.name %>
+          <li class="h-entry">
+            <a href="<%= thing.url %>" class="u-url">
+              <h2 class="p-name"><%= thing.name %></h2>
+              <p class="e-content">
+                <%= thing.description %>
+              </p>
             </a>
           </li>
         <% end %>
