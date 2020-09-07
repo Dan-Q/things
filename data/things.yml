@@ -1,0 +1,159 @@
+- name: Dan Q
+  description: Dan's personal website and blog. Centre of the Digital Daniverse.
+  url: https://danq.me/
+
+- name: Dan Q's Things
+  description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
+  url: https://things.danq.me/
+
+- name: Find Dan Q
+  description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
+  url: https://find.danq.me/
+
+- name: Fnorders
+  description: A Fnorders-generator in the style of the Fnorder by Steve Jackson Games.
+  url: https://fnorders.com/
+  source: https://github.com/Dan-Q/Fnorders
+  about: https://danq.me/2017/09/13/fnorders/
+
+- name: Non-Stop Hammer Ti . me
+  description: Break it down!
+  url: https://nonstophammerti.me/
+  source: https://github.com/Dan-Q/NonStopHammerTi.me
+
+- name: We Will Rock . EU
+  description: Whomp whomp tish. Whomp whomp tish.
+  url: https://wewillrock.eu/
+  source: https://github.com/Dan-Q/WeWillRock.eu
+
+- name: TRRTL
+  description: Coffee-drinking LOGO turtles.
+  url: https://trrtl.com/
+  source: https://github.com/Dan-Q/trrtl
+
+- name: Break Into Us
+  description: Lock-breaking puzzle game.
+  url: https://breakinto.us/
+  source: https://github.com/Dan-Q/Break-Into-Us
+  about: https://danq.me/2020/06/27/break-into-us/
+
+- name: Bodleian Advent Calendar
+  status: Down
+  description: Interactive online advent calendar. Reveal a picture a day at a time.
+  source: https://github.com/Dan-Q/bodleian-advent-calendar
+  about: https://danq.me/2018/12/05/advent2018/
+
+- name: Twee2
+  status: Abandoned
+  description: Command-line compilation tools for Twine 2 interactive fiction.
+  url: https://dan-q.github.io/twee2/
+  source: https://github.com/Dan-Q/twee2
+  about: https://danq.me/2015/10/22/twee2/
+
+- name: Cheatman
+  description: A game of hangman that cheats (while keeping its lies internally-consistent).
+  url: https://cheatman.danq.me/
+  source: https://github.com/Dan-Q/hangman-cheat
+  about: https://danq.me/2019/09/26/cheatman/
+
+- name: RSSey
+  description: Anything-to-RSS converter based on headless Chrome.
+  source: https://github.com/Dan-Q/rssey
+
+- name: Power Button
+  description: Command-line tool to allow e.g. an Arduino to trigger commands on remote computers.
+  source: https://github.com/Dan-Q/power-button
+
+- name: Geohashing Wiki
+  description: Adopted from XKCD, the central resource for geohashers worldwide.
+  url: https://geohashing.site/geohashing/Main_Page
+  about: https://danq.me/2020/02/06/geohashing/
+
+- name: Free Deed Poll
+  description: Change your name for free and without a solicitor.
+  url: http://www.freedeedpoll.org.uk/
+  source: https://github.com/Dan-Q/freedeedpoll
+
+- name: LABS Comic Complete RSS Feed
+  description: Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.
+  url: https://raw.githubusercontent.com/Dan-Q/labscomic-archives-to-rss/master/output.rss
+  source: https://github.com/Dan-Q/labscomic-archives-to-rss
+
+- name: Pong HW
+  description: Reimplentation of Pong designed for ultrawide video walls.
+  source: https://github.com/Dan-Q/pong-hw
+  about: https://danq.me/2018/11/30/pong/
+
+- name: Steer!
+  status: Abandoned
+  description: Tilt-sensor/websocket based driving game. Use your mobile to steer!
+  source: https://github.com/Dan-Q/Steer
+  about: https://danq.me/2017/04/28/steer/
+
+- name: MegaMegaMonitor
+  status: Dead
+  description: Toolset to help members of private subreddits to find and talk to one another.
+  source: https://github.com/Dan-Q/megamegamonitor
+  about: https://www.reddit.com/r/megamegamonitor
+
+- name: Lunar Lander
+  description: A classic Lunar Lander game.
+  url: https://danq.me/lunar.min.html
+  about: https://danq.me/2018/03/03/lunar-lander/
+  source: https://github.com/Dan-Q/lunar-lander
+
+- name: Abnib
+  status: Dead
+  description: Community weblog aggregator powered by Jekyll.
+  source: https://github.com/Dan-Q/abnib
+
+- name: Monte Carlo Pi
+  description: Demonstration of using a Monte Carlo method to calculate Pi. In JavaScript.
+  url: https://danq.me/monte-carlo-pi.html
+  source: https://github.com/Dan-Q/monte-carlo-pi
+  about: https://danq.me/2015/06/14/calculating-pi/
+
+- name: Penney's Game
+  description: Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.
+  source: https://github.com/Dan-Q/penneys-game
+  url: https://danq.me/penney/
+  about: https://danq.me/2013/03/23/non-transitive-games/
+
+- name: KeePass for Opera
+  status: Abandoned
+  description: Plugin to enable Opera versions 12+ (but prior to the switch to the Chromium/Blink engine) to integrate with KeePass.
+  source: https://github.com/Dan-Q/keepass-opera
+
+- name: Dan's Geocaching Reposter
+  description: Plugin and bookmarklet to streamline importing geocaching logs into your WordPress blog, PESOS-style.
+  source: https://github.com/Dan-Q/danq-geocaching-reposter
+  about: https://danq.me/2018/09/16/importing-geocaching-logs-into-wordpress/
+
+- name: WordPress Post Kinds RSS Prefixer
+  description: WordPress RSS tweak to show the IndieWeb post "kind" as a prefix.
+  source: https://gist.github.com/Dan-Q/87027e17456d4102c7c78290023322cd
+  about: https://danq.me/2020/03/01/post-kinds-rss/
+
+- name: Workplace Countdown Timer
+  status: Abandoned
+  description: Dan used this to put a "you have X time left to ask Dan a question" countdown up after he handed in his notice at a previous job.
+  source: https://gist.github.com/Dan-Q/d73191000ee68ccd4d37de49765e6781
+  about: https://danq.me/2019/09/03/counting-down/
+
+- name: BBC News... Without the Sport
+  description: The BBC News RSS feed with the Sports stories removed.
+  source: https://gist.github.com/Dan-Q/65bb0a9470236520cbe255ff44924ce3
+  about: https://danq.me/2019/05/14/bbc-news-without-the-sport/
+  url: https://f001.backblazeb2.com/file/Dan--Q--Public/bbc-news-nosport.rss
+
+- name: CSS-Driven Console Graphics
+  status: Abandoned
+  description: Convert a PNG image into some CSS code to inject into a browser's debugger.
+  about: https://danq.me/2019/01/16/css-driven-console-graphics/
+  source: https://gist.github.com/Dan-Q/674fbb5fef547432b7a5c9819701889a
+
+- name: Google Authenticator CLI
+  description: Command-line version of Google Authenticator, powered by Ruby.
+  source: https://gist.github.com/Dan-Q/9f03057cddbda08ee7dfe4910f686150
+
+# May be more from e.g. https://gist.github.com/Dan-Q?page=3 onwards?
