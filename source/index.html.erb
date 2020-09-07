@@ -17,7 +17,7 @@
       <ul>
         <% data.things.each do |thing| %>
           <li class="h-entry">
-            <a href="<%= thing.url %>" class="u-url">
+            <a href="<%= thing.url || thing.about %>" class="u-url">
               <h2 class="p-name"><%= thing.name %></h2>
               <p class="e-content">
                 <%= thing.description %>
