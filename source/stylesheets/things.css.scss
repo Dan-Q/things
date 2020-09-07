@@ -10,6 +10,17 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #eee;
   color: #333;
+  margin: 0;
+}
+
+header, footer {
+  background: white;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+footer {
+  font-size: 80%;
 }
 
 a {
@@ -30,7 +41,7 @@ li {
   flex-grow: 1;
 
   a {
-    border-radius: 1rem;
+    border-radius: 25px;
     background-color: white;
     position: relative;
     text-decoration: none;
@@ -46,7 +57,7 @@ li {
     }
 
     & > div {
-      border-radius: 0 0 1rem 1rem;
+      border-radius: 0 0 18px 18px;
       background-color: #ffffffcc;
       padding: 0.5rem 0.75rem;
     }
@@ -59,7 +70,7 @@ li {
   right: 0.75rem;
   text-transform: uppercase;
   font-size: 80%;
-  background: lightgray;
+  background: lightblue;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }

@@ -12,10 +12,13 @@
       <h1 class="p-name">
         <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a>'s Things
       </h1>
+      <p>
+        A selection of stuff Dan has done around the Web.
+      </p>
     </header>
     <main>
       <ul>
-        <% data.things.each do |thing| %>
+        <% data.things.sort_by{|t|(t.weight || 0) + (t.image ? 1 : 0) + rand}.reverse.each do |thing| %>
           <li class="h-entry">
             <a href="<%= thing.url || thing.about || thing.source %>" class="u-url"<%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
               <div>
@@ -32,5 +35,10 @@
         <% end %>
       </ul>
     </main>
+    <footer>
+      &copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020 |
+      <a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
+      a <a href="https://things.danq.me/">Dan Q Thing</a>
+    </footer>
   </body>
 </html>
