@@ -22,6 +22,9 @@
               <p class="e-content">
                 <%= thing.description %>
               </p>
+              <% if thing.status %>
+                <p class="p-category"><%= thing.status %></p>
+              <% end %>
             </a>
           </li>
         <% end %>
