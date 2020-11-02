@@ -23,6 +23,13 @@
   image: fnorders.png
   weight: 1
 
+- name: The Green
+  description: Where Dan and his family live.
+  url: https://thegreen.q-t-a.uk/
+  source: https://github.com/dan-q/things
+  image: thegreen.png
+  weight: 1
+
 - name: Non-Stop Hammer Ti . me
   description: Break it down!
   url: https://nonstophammerti.me/
@@ -73,6 +80,7 @@
   url: https://cheatman.danq.me/
   source: https://github.com/Dan-Q/hangman-cheat
   about: https://danq.me/2019/09/26/cheatman/
+  image: cheatman.png
   weight: 1
 
 - name: RSSey
@@ -106,6 +114,7 @@
   description: Reimplentation of Pong designed for ultrawide video walls.
   source: https://github.com/Dan-Q/pong-hw
   about: https://danq.me/2018/11/30/pong/
+  image: pong.jpg
 
 - name: Steer!
   status: Abandoned
@@ -143,12 +152,14 @@
   url: https://danq.me/monte-carlo-pi.html
   source: https://github.com/Dan-Q/monte-carlo-pi
   about: https://danq.me/2015/06/14/calculating-pi/
+  image: monte-carlo-pi.png
 
 - name: Penney's Game
   description: Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.
   source: https://github.com/Dan-Q/penneys-game
   url: https://danq.me/penney/
   about: https://danq.me/2013/03/23/non-transitive-games/
+  image: penney.png
   weight: 1
 
 - name: KeePass for Opera
@@ -172,6 +183,7 @@
   description: Dan used this to put a "you have X time left to ask Dan a question" countdown up after he handed in his notice at a previous job.
   source: https://gist.github.com/Dan-Q/d73191000ee68ccd4d37de49765e6781
   about: https://danq.me/2019/09/03/counting-down/
+  image: countdown.jpg
 
 - name: BBC News... Without the Sport
   description: The BBC News RSS feed with the Sports stories removed.
