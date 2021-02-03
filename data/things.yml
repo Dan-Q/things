@@ -15,6 +15,14 @@
   image: find.png
   weight: 3
 
+- name: Axe Feather
+  description: Recreation of an 2004 Flash-based ad using modern web technologies.
+  url: https://axe-feather.danq.dev/
+  source: https://github.com/Dan-Q/Axe-Feather-2021/
+  about: https://danq.me/2021/02/02/axe-feather-2021/
+  image: axe-feather.png
+  weight: 1
+
 - name: Fnorders
   description: A Fnorders-generator in the style of the Fnorder by Steve Jackson Games.
   url: https://fnorders.com/
