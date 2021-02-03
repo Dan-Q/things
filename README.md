@@ -2,7 +2,7 @@
 
 https://things.danq.me/
 
-Single-page site promoting "things" that [Dan Q](https://danq.me/) has made, around the Web. Static site generated from YML data using [Middlemman](https://middlemanapp.com/).
+Single-page site promoting "things" that [Dan Q](https://danq.me/) has made, around the Web. Static site generated from YML data using [Middleman](https://middlemanapp.com/).
 
 ## Dependencies
 
