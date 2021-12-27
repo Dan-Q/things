@@ -67,6 +67,12 @@
   image: breakintous.png
   weight: 2
 
+- name: EGXchange
+  description: Digital wallet for Emma GoldCoin.
+  url: https://egxchange.org/
+  about: https://danq.me/2021/12/27/egxchange/
+  image: egx.png
+
 - name: Bodleian Advent Calendar
   status: Down
   description: Interactive online advent calendar. Reveal a picture a day at a time.
