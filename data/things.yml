@@ -15,6 +15,14 @@
   image: find.png
   weight: 3
 
+- name: DNDle
+  description: Like Wordle, but you guess D&D monsters by picking attributes.
+  url: https://dndle.app/
+  source: https://github.com/Dan-Q/dndle
+  about: https://danq.me/dndle
+  image: dndle.png
+  weight: 2
+
 - name: Axe Feather
   description: Recreation of an 2004 Flash-based ad using modern web technologies.
   url: https://axe-feather.danq.dev/
