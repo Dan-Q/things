@@ -34,43 +34,61 @@ ul {
   justify-content: space-between;
 }
 
-li {
+.h-entry {
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+  color: inherit;
   display: block;
+  flex-grow: 1;
   list-style: none;
   margin: 0.75rem;
-  flex-grow: 1;
+  padding: 10rem 0 0;
+  position: relative;
+  text-decoration: none;
 
-  a {
-    border-radius: 25px;
-    background-color: white;
-    position: relative;
+  h2, p {
+    padding: 0 0.75rem 1rem;
+    background-color: #ffffffcc;
+    margin: 0;
+  }
+
+  .u-url {
+    color: #333;
     text-decoration: none;
-    color: inherit;
-    display: block;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 10rem;
-    border: 6px solid #eee;
 
-    &:hover, &:focus {
-      border-color: #155a93;
+    &::after {
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 4px solid #eee;
     }
 
-    & > div {
-      border-radius: 0 0 18px 18px;
-      background-color: #ffffffcc;
-      padding: 0.5rem 0.75rem;
+    &:hover::after, &:focus::after {
+      border-color: #155a93;
     }
   }
 }
 
-.p-category {
+.tags {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
   text-transform: uppercase;
   font-size: 80%;
+  gap: 0.5rem;
+}
+
+.tag {
   background: lightblue;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  list-style: none;
+
+  a {
+    color: #333;
+  }
 }

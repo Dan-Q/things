@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dan Q's Things</title>
-    <%= stylesheet_link_tag 'things' %>
-    <%= javascript_include_tag 'things' %>
-  </head>
-  <body class="h-feed">
-    <header>
-      <h1 class="p-name">
-        <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a>'s Things
-      </h1>
-      <p>
-        A selection of stuff Dan has done around the Web.
-      </p>
-    </header>
-    <main>
-      <ul>
-        <% data.things.sort_by{|t|(t.weight || 0) + (t.image ? 1 : 0) + rand}.reverse.each do |thing| %>
-          <li class="h-entry">
-            <a href="<%= thing.url || thing.about || thing.source %>" class="u-url"<%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
-              <div>
-                <h2 class="p-name"><%= thing.name %></h2>
-                <p class="e-content">
-                  <%= thing.description %>
-                </p>
-                <% if thing.status %>
-                  <p class="p-category"><%= thing.status %></p>
-                <% end %>                
-              </div>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </main>
-    <footer>
-      &copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020 |
-      <a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
-      a <a href="https://things.danq.me/">Dan Q Thing</a>
-    </footer>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dan Q's Things</title>
+		<%= stylesheet_link_tag 'things' %>
+		<%= javascript_include_tag 'things' %>
+	</head>
+	<body class="h-feed">
+		<header>
+			<h1 class="p-name">
+				<a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a>'s Things
+			</h1>
+			<p>
+				A selection of stuff Dan has done around the Web.
+			</p>
+		</header>
+		<main>
+			<ul class="things">
+				<% data.things.sort_by{|t|(t.weight || 0) + (t.image ? 1 : 0) + rand}.reverse.each do |thing| %>
+					<li class="h-entry" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
+						<h2 class="p-name">
+							<a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
+								<%= thing.name %>
+							</a>
+						</h2>
+						<p class="e-content">
+							<%= thing.description %>
+						</p>
+						<ul class="tags">
+							<% if thing.status %>
+								<li class="tag p-category"><%= thing.status %></li>
+							<% end %>
+							<% if thing.url && thing.about %>
+								<li class="tag"><a href="<%= thing.about %>">about</a></li>
+							<% end %>
+							<% if (thing.url || thing.about) && thing.source %>
+								<li class="tag"><a href="<%= thing.source %>">source</a></li>
+							<% end %>
+						</ul>
+					</li>
+				<% end %>
+			</ul>
+		</main>
+		<footer>
+			&copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020 |
+			<a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
+			a <a href="https://things.danq.me/">Dan Q Thing</a>
+		</footer>
+	</body>
 </html>
