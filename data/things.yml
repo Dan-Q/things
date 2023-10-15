@@ -15,6 +15,12 @@
   image: find.png
   weight: 3
 
+- name: Mastermind Solver
+  description: Plays a smarter game of Mastermind than you, probably.
+  url: https://danq.me/wp-content/uploads/mastermind.html
+  source: https://github.com/Dan-Q/mastermind-solver
+  weight: 2
+
 - name: DNDle
   description: Like Wordle, but you guess D&D monsters by picking attributes.
   url: https://dndle.app/
@@ -225,5 +231,12 @@
 - name: Google Authenticator CLI
   description: Command-line version of Google Authenticator, powered by Ruby.
   source: https://gist.github.com/Dan-Q/9f03057cddbda08ee7dfe4910f686150
+
+- name: "Sisyphus: The Game"
+  description: Terrible implementation of a stupid board game idea
+  url: https://danq.me/sisyphus-the-game/
+  about: https://danq.me/sisyphus-game/
+  source: https://github.com/Dan-Q/sisyphus
+  image: sisyphus.png
 
 # May be more from e.g. https://gist.github.com/Dan-Q?page=3 onwards?
