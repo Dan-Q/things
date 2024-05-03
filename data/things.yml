@@ -15,6 +15,13 @@
   image: find.png
   weight: 3
 
+- name: text/plain blog
+  description: Who said a blog needed to be in HTML, anyway?
+  url: https://textplain.blog/
+  about: https://danq.me/2024/05/03/does-a-blog-have-to-be-html/
+  source: https://github.com/dan-Q/textplain.blog
+  weight: 2
+
 - name: Mastermind Solver
   description: Plays a smarter game of Mastermind than you, probably.
   url: https://danq.me/wp-content/uploads/mastermind.html
