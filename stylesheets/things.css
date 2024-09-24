@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Raleway-Regular"), url(/fonts/raleway-v11-latin-regular.woff2) format("woff2"), url(/fonts/raleway-v11-latin-regular.woff) format("woff");
+  font-display: swap; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #eee;
+  color: #333;
+  margin: 0; }
+
+header, footer {
+  background: white;
+  padding: 0.75rem;
+  text-align: center; }
+
+footer {
+  font-size: 80%; }
+
+a {
+  color: #155a93; }
+
+ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.h-entry {
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+  color: inherit;
+  display: block;
+  flex-grow: 1;
+  list-style: none;
+  margin: 0.75rem;
+  padding: 10rem 0 0;
+  position: relative;
+  text-decoration: none; }
+  .h-entry h2, .h-entry p {
+    padding: 0 0.75rem 1rem;
+    background-color: #ffffffcc;
+    margin: 0; }
+  .h-entry .u-url {
+    color: #333;
+    text-decoration: none; }
+    .h-entry .u-url::after {
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 4px solid #eee; }
+    .h-entry .u-url:hover::after, .h-entry .u-url:focus::after {
+      border-color: #155a93; }
+
+.tags {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  text-transform: uppercase;
+  font-size: 80%;
+  gap: 0.5rem; }
+
+.tag {
+  background: lightblue;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  list-style: none; }
+  .tag a {
+    color: #333; }
