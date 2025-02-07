@@ -224,11 +224,11 @@
   about: https://danq.me/2019/09/03/counting-down/
   image: countdown.jpg
 
-- name: BBC News... Without the Sport
-  description: The BBC News RSS feed with the Sports stories removed.
-  source: https://gist.github.com/Dan-Q/65bb0a9470236520cbe255ff44924ce3
-  about: https://danq.me/2019/05/14/bbc-news-without-the-sport/
-  url: https://f001.backblazeb2.com/file/Dan--Q--Public/bbc-news-nosport.rss
+- name: BBC News RSS Feeds (that don't suck!)
+  description:  BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.
+  source: https://github.com/Dan-Q/bbc-feeds
+  about: https://bbc-feeds.danq.dev/
+  url: https://bbc-feeds.danq.dev/
   image: bbc-news-no-sport.png
 
 - name: CSS-Driven Console Graphics
