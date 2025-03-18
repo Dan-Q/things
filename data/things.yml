@@ -1,6 +1,7 @@
 - name: Dan Q
   description: Dan's personal website and blog. Centre of the Digital Daniverse.
   url: https://danq.me/
+  about: https://danq.me/colophon/
   image: dan-q.webp
   weight: 4
 
