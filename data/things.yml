@@ -21,12 +21,15 @@
   url: https://textplain.blog/
   about: https://danq.me/2024/05/03/does-a-blog-have-to-be-html/
   source: https://github.com/dan-Q/textplain.blog
+  image: textplain.webp
   weight: 2
 
 - name: Mastermind Solver
   description: Plays a smarter game of Mastermind than you, probably.
   url: https://danq.me/wp-content/uploads/mastermind.html
   source: https://github.com/Dan-Q/mastermind-solver
+  about: https://danq.me/2022/08/24/mastermind-solver/
+  image: mastermind.webp
   weight: 2
 
 - name: DNDle
@@ -35,6 +38,7 @@
   source: https://github.com/Dan-Q/dndle
   about: https://danq.me/dndle
   image: dndle.webp
+  weight: 2
 
 - name: Mattify
   description: If you like it, you should'a put'a hat on it.
@@ -66,18 +70,20 @@
   weight: 1
 
 - name: Non-Stop Hammer Ti . me
+  status: Dead
   description: Break it down!
   url: https://nonstophammerti.me/
   source: https://github.com/Dan-Q/NonStopHammerTi.me
+  about: https://danq.me/2019/04/03/nonstophammertime/
   image: hammertime.webp
-  weight: 1
 
 - name: We Will Rock . EU
+  status: Dead
   description: Whomp whomp tish. Whomp whomp tish.
   url: https://wewillrock.eu/
   source: https://github.com/Dan-Q/WeWillRock.eu
+  about: https://danq.me/2019/06/17/14062/
   image: rockyou.webp
-  weight: 1
 
 - name: TRRTL
   description: Coffee-drinking LOGO turtles.
@@ -93,7 +99,7 @@
   source: https://github.com/Dan-Q/Break-Into-Us
   about: https://danq.me/2020/06/27/break-into-us/
   image: breakintous.webp
-  weight: 2
+  weight: 1
 
 - name: EGXchange
   description: Digital wallet for Emma GoldCoin.
@@ -115,7 +121,6 @@
   source: https://github.com/Dan-Q/twee2
   about: https://danq.me/2015/10/22/twee2/
   image: twee2.webp
-  weight: -1
 
 - name: Cheatman
   description: A game of hangman that cheats (while keeping its lies internally-consistent).
@@ -151,12 +156,14 @@
   description: Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.
   url: https://raw.githubusercontent.com/Dan-Q/labscomic-archives-to-rss/master/output.rss
   source: https://github.com/Dan-Q/labscomic-archives-to-rss
+  weight: -1
 
 - name: Pong HW
   description: Reimplentation of Pong designed for ultrawide video walls.
   source: https://github.com/Dan-Q/pong-hw
   about: https://danq.me/2018/11/30/pong/
   image: pong.webp
+  weight: -1
 
 - name: Steer!
   status: Abandoned
@@ -199,10 +206,9 @@
 - name: Penney's Game
   description: Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.
   source: https://github.com/Dan-Q/penneys-game
-  url: https://danq.me/penney/
+  url: https://danq.me/penney/index.html
   about: https://danq.me/2013/03/23/non-transitive-games/
   image: penney.webp
-  weight: 1
 
 - name: KeePass for Opera
   status: Abandoned
@@ -235,6 +241,7 @@
   about: https://bbc-feeds.danq.dev/
   url: https://bbc-feeds.danq.dev/
   image: bbc-news-no-sport.webp
+  weight: 1
 
 - name: CSS-Driven Console Graphics
   status: Abandoned
@@ -242,13 +249,15 @@
   about: https://danq.me/2019/01/16/css-driven-console-graphics/
   source: https://gist.github.com/Dan-Q/674fbb5fef547432b7a5c9819701889a
   image: css-console-graphics.webp
-  weight: -1
 
 - name: Google Authenticator CLI
+  status: Abandoned
   description: Command-line version of Google Authenticator, powered by Ruby.
   source: https://gist.github.com/Dan-Q/9f03057cddbda08ee7dfe4910f686150
+  about: https://danq.me/2018/12/10/second-factor-safety-net/
 
 - name: "Sisyphus: The Game"
+  status: Down
   description: Terrible implementation of a stupid board game idea
   url: https://danq.me/sisyphus-the-game/
   about: https://danq.me/sisyphus-game/
