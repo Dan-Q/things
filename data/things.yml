@@ -40,6 +40,7 @@
   description: If you like it, you should'a put'a hat on it.
   url: https://mattify.abnib.co.uk/
   source: https://github.com/Dan-Q/mattify
+  image: mattify.webp
 
 - name: Axe Feather
   description: Recreation of an 2004 Flash-based ad using modern web technologies.
@@ -207,12 +208,14 @@
   status: Abandoned
   description: Plugin to enable Opera versions 12+ (but prior to the switch to the Chromium/Blink engine) to integrate with KeePass.
   source: https://github.com/Dan-Q/keepass-opera
+  image: keepass-for-opera.webp
   weight: -2
 
 - name: Dan's Geocaching Reposter
   description: Plugin and bookmarklet to streamline importing geocaching logs into your WordPress blog, PESOS-style.
   source: https://github.com/Dan-Q/danq-geocaching-reposter
   about: https://danq.me/2018/09/16/importing-geocaching-logs-into-wordpress/
+  image: geocaching-reposter.webp
 
 - name: WordPress Post Kinds RSS Prefixer
   description: WordPress RSS tweak to show the IndieWeb post "kind" as a prefix.
