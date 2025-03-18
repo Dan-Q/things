@@ -264,4 +264,48 @@
   source: https://github.com/Dan-Q/sisyphus
   image: sisyphus.webp
 
+- name: CapsulePress
+  description: Opinionated Gemini/Spartan/Gopher server with a WordPress backend.
+  source: https://github.com/Dan-Q/CapsulePress
+  about: https://danq.me/2023/09/10/capsulepress/
+  image: capsulepress.webp
+
+- name: Drawings as WordPress Comments
+  description: What if a blog comment... could be a sketch rather than text?
+  url: https://danq.me/2024/08/15/draw-me-a-comment/
+  source: https://github.com/Dan-Q/q23-drawings-as-wordpress-comments
+  about: https://danq.me/2024/08/15/draw-me-a-comment/
+  image: wordpress-drawings-as-comments.webp
+
+- name: Not The Lottery
+  description: Visualise how much you're not going to win EuroMillions.
+  url: https://danq.me/2024/01/28/bloganuary-2024-28/
+  source: https://github.com/Dan-Q/not-the-lottery
+  about: https://danq.me/2024/01/28/bloganuary-2024-28/
+  image: not-the-lottery.webp
+
+- name: Replacement Population Growth Simulator
+  status: Abandoned
+  description: "'Replacement' population actually results in population growth while life expectancy increases. Let me prove it to you."
+  source: https://github.com/Dan-Q/replacement-population-growth-simulation
+
+- name: SHA1 Length Extension Attack Demonstration
+  description: Length extension attacks are hard to understand. So I made a demonstrative explainer.
+  url: https://danq.me/2023/11/30/length-extension-attack/
+  source: https://github.com/Dan-Q/length-extension-attack-demo
+  image: sha1-length-attack-demo-video-screenshot.webp
+  weight: 1
+
+- name: PHP4 Transparent Session Demo
+  description: PHP4 had a strange feature to try to work around the fact that cookies weren't yet universally supported.
+  url: https://github.com/Dan-Q/php4-transparent-session-demo
+  source: https://github.com/Dan-Q/php4-transparent-session-demo
+  weight: -1
+
+- name: ".well-known/feeds"
+  description: Proposed specification to make RSS (etc.) feeds representing an entire website easier to discover.
+  url: https://github.com/Dan-Q/well-known-feeds
+  source: https://github.com/Dan-Q/well-known-feeds
+  about: https://danq.me/2023/08/23/well-known-feeds/
+
 # May be more from e.g. https://gist.github.com/Dan-Q?page=3 onwards?
