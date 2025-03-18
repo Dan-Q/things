@@ -18,7 +18,10 @@
 		</header>
 		<main>
 			<ul class="things">
-				<% data.things.sort_by{|t|(t.weight || 0) + (t.image ? 1 : 0) + rand}.reverse.each do |thing| %>
+				<% data.things.
+					sort_by{|t|(t.status == 'Dead' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (t.image ? 1 : 0) + rand}.
+					reverse.
+					each do |thing| %>
 					<li class="h-entry" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
 						<h2 class="p-name">
 							<a href="<%= thing.url || thing.about || thing.source %>" class="u-url">

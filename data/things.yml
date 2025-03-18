@@ -8,12 +8,13 @@
   description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
   url: https://things.danq.me/
   source: https://github.com/dan-q/things
+  weight: 2
 
 - name: Find Dan Q
   description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
   url: https://find.danq.me/
   image: find.webp
-  weight: 3
+  weight: 2
 
 - name: text/plain blog
   description: Who said a blog needed to be in HTML, anyway?
@@ -85,6 +86,7 @@
   weight: 1
 
 - name: Break Into Us
+  status: Dead
   description: Lock-breaking puzzle game.
   url: https://breakinto.us/
   source: https://github.com/Dan-Q/Break-Into-Us
