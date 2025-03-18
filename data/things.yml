@@ -1,7 +1,7 @@
 - name: Dan Q
   description: Dan's personal website and blog. Centre of the Digital Daniverse.
   url: https://danq.me/
-  image: dan-q.png
+  image: dan-q.webp
   weight: 4
 
 - name: Dan Q's Things
@@ -12,7 +12,7 @@
 - name: Find Dan Q
   description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
   url: https://find.danq.me/
-  image: find.png
+  image: find.webp
   weight: 3
 
 - name: text/plain blog
@@ -33,7 +33,7 @@
   url: https://dndle.app/
   source: https://github.com/Dan-Q/dndle
   about: https://danq.me/dndle
-  image: dndle.png
+  image: dndle.webp
 
 - name: Mattify
   description: If you like it, you should'a put'a hat on it.
@@ -45,7 +45,7 @@
   url: https://axe-feather.danq.dev/
   source: https://github.com/Dan-Q/Axe-Feather-2021/
   about: https://danq.me/2021/02/02/axe-feather-2021/
-  image: axe-feather.png
+  image: axe-feather.webp
   weight: 1
 
 - name: Fnorders
@@ -53,35 +53,35 @@
   url: https://fnorders.com/
   source: https://github.com/Dan-Q/Fnorders
   about: https://danq.me/2017/09/13/fnorders/
-  image: fnorders.png
+  image: fnorders.webp
   weight: 1
 
 - name: The Green
   description: Where Dan and his family live.
   url: https://thegreen.q-t-a.uk/
   source: https://github.com/dan-q/things
-  image: thegreen.png
+  image: thegreen.webp
   weight: 1
 
 - name: Non-Stop Hammer Ti . me
   description: Break it down!
   url: https://nonstophammerti.me/
   source: https://github.com/Dan-Q/NonStopHammerTi.me
-  image: hammertime.png
+  image: hammertime.webp
   weight: 1
 
 - name: We Will Rock . EU
   description: Whomp whomp tish. Whomp whomp tish.
   url: https://wewillrock.eu/
   source: https://github.com/Dan-Q/WeWillRock.eu
-  image: rockyou.png
+  image: rockyou.webp
   weight: 1
 
 - name: TRRTL
   description: Coffee-drinking LOGO turtles.
   url: https://trrtl.com/
   source: https://github.com/Dan-Q/trrtl
-  image: trrtl.png
+  image: trrtl.webp
   weight: 1
 
 - name: Break Into Us
@@ -89,21 +89,21 @@
   url: https://breakinto.us/
   source: https://github.com/Dan-Q/Break-Into-Us
   about: https://danq.me/2020/06/27/break-into-us/
-  image: breakintous.png
+  image: breakintous.webp
   weight: 2
 
 - name: EGXchange
   description: Digital wallet for Emma GoldCoin.
   url: https://egxchange.org/
   about: https://danq.me/2021/12/27/egxchange/
-  image: egx.png
+  image: egx.webp
 
 - name: Bodleian Advent Calendar
   status: Down
   description: Interactive online advent calendar. Reveal a picture a day at a time.
   source: https://github.com/Dan-Q/bodleian-advent-calendar
   about: https://danq.me/2018/12/05/advent2018/
-  image: bod-calendar.png
+  image: bod-calendar.webp
 
 - name: Twee2
   status: Abandoned
@@ -111,7 +111,7 @@
   url: https://dan-q.github.io/twee2/
   source: https://github.com/Dan-Q/twee2
   about: https://danq.me/2015/10/22/twee2/
-  image: twee2.png
+  image: twee2.webp
   weight: -1
 
 - name: Cheatman
@@ -119,7 +119,7 @@
   url: https://cheatman.danq.me/
   source: https://github.com/Dan-Q/hangman-cheat
   about: https://danq.me/2019/09/26/cheatman/
-  image: cheatman.png
+  image: cheatman.webp
   weight: 1
 
 - name: RSSey
@@ -134,14 +134,14 @@
   description: Adopted from XKCD, the central resource for geohashers worldwide.
   url: https://geohashing.site/geohashing/Main_Page
   about: https://danq.me/2020/02/06/geohashing/
-  image: geohashing.png
+  image: geohashing.webp
   weight: 1
 
 - name: Free Deed Poll
   description: Change your name for free and without a solicitor.
   url: http://www.freedeedpoll.org.uk/
   source: https://github.com/Dan-Q/freedeedpoll
-  image: deed.png
+  image: deed.webp
   weight: 2
 
 - name: LABS Comic Complete RSS Feed
@@ -153,14 +153,14 @@
   description: Reimplentation of Pong designed for ultrawide video walls.
   source: https://github.com/Dan-Q/pong-hw
   about: https://danq.me/2018/11/30/pong/
-  image: pong.jpg
+  image: pong.webp
 
 - name: Steer!
   status: Abandoned
   description: Tilt-sensor/websocket based driving game. Use your mobile to steer!
   source: https://github.com/Dan-Q/Steer
   about: https://danq.me/2017/04/28/steer/
-  image: steer.jpg
+  image: steer.webp
   weight: -1
 
 - name: MegaMegaMonitor
@@ -168,7 +168,7 @@
   description: Toolset to help members of private subreddits to find and talk to one another.
   source: https://github.com/Dan-Q/megamegamonitor
   about: https://www.reddit.com/r/megamegamonitor
-  image: mmm.png
+  image: mmm.webp
   weight: -1
 
 - name: Lunar Lander
@@ -176,14 +176,14 @@
   url: https://danq.me/lunar.min.html
   about: https://danq.me/2018/03/03/lunar-lander/
   source: https://github.com/Dan-Q/lunar-lander
-  image: lunar.png
+  image: lunar.webp
   weight: 1
 
 - name: Abnib
   status: Dead
   description: Community weblog aggregator powered by Jekyll.
   source: https://github.com/Dan-Q/abnib
-  image: abnib.jpg
+  image: abnib.webp
   weight: -2
 
 - name: Monte Carlo Pi
@@ -191,14 +191,14 @@
   url: https://danq.me/monte-carlo-pi.html
   source: https://github.com/Dan-Q/monte-carlo-pi
   about: https://danq.me/2015/06/14/calculating-pi/
-  image: monte-carlo-pi.png
+  image: monte-carlo-pi.webp
 
 - name: Penney's Game
   description: Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.
   source: https://github.com/Dan-Q/penneys-game
   url: https://danq.me/penney/
   about: https://danq.me/2013/03/23/non-transitive-games/
-  image: penney.png
+  image: penney.webp
   weight: 1
 
 - name: KeePass for Opera
@@ -222,21 +222,21 @@
   description: Dan used this to put a "you have X time left to ask Dan a question" countdown up after he handed in his notice at a previous job.
   source: https://gist.github.com/Dan-Q/d73191000ee68ccd4d37de49765e6781
   about: https://danq.me/2019/09/03/counting-down/
-  image: countdown.jpg
+  image: countdown.webp
 
 - name: BBC News RSS Feeds (that don't suck!)
   description:  BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.
   source: https://github.com/Dan-Q/bbc-feeds
   about: https://bbc-feeds.danq.dev/
   url: https://bbc-feeds.danq.dev/
-  image: bbc-news-no-sport.png
+  image: bbc-news-no-sport.webp
 
 - name: CSS-Driven Console Graphics
   status: Abandoned
   description: Convert a PNG image into some CSS code to inject into a browser's debugger.
   about: https://danq.me/2019/01/16/css-driven-console-graphics/
   source: https://gist.github.com/Dan-Q/674fbb5fef547432b7a5c9819701889a
-  image: css-console-graphics.png
+  image: css-console-graphics.webp
   weight: -1
 
 - name: Google Authenticator CLI
@@ -248,6 +248,6 @@
   url: https://danq.me/sisyphus-the-game/
   about: https://danq.me/sisyphus-game/
   source: https://github.com/Dan-Q/sisyphus
-  image: sisyphus.png
+  image: sisyphus.webp
 
 # May be more from e.g. https://gist.github.com/Dan-Q?page=3 onwards?
