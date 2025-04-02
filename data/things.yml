@@ -41,6 +41,14 @@
   image: dndle.webp
   weight: 2
 
+- name: Change Your Star Sign
+  description: This one weird trick means that you can change your star sign to any that you want!
+  url: https://changeyourstarsign.com/
+  source: https://github.com/Dan-Q/changeyourstarsign
+  about: https://danq.me/2025/04/02/change-your-star-sign/
+  image: changeyourstarsign.webp
+  weight: 1
+
 - name: Mattify
   description: If you like it, you should'a put'a hat on it.
   url: https://mattify.abnib.co.uk/
