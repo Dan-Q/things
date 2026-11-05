@@ -1,0 +1,19 @@
+{
+  "name": "things",
+  "private": true,
+  "description": "Tooling for taking screenshots and dev-server-ing Dan Q's Things",
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.14"
+  },
+  "scripts": {
+    "build": "bundle exec middleman build",
+    "watch": "nodemon --watch source --watch data --watch screenshots --ext \"html,erb,css,scss,sass,js,yml,yaml,webp,png,jpg,jpeg,gif,svg,woff,woff2\" --exec \"npm run build\"",
+    "serve": "http-server build -c-1",
+    "dev": "concurrently -k -n build,serve -c blue,green \"npm run watch\" \"npm run serve\""
+  }
+}

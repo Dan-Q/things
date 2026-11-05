@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,11 @@
 		<main>
 			<ul class="things">
 				<% data.things.
-					sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (t.image ? 1 : 0) + rand}.
+					sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (thing_image(t) ? 1 : 0) + rand}.
 					reverse.
 					each do |thing| %>
-					<li class="h-entry" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %>>
+					<% image = thing_image(thing) %>
+					<li class="h-entry" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
 						<h2 class="p-name">
 							<a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
 								<%= thing.name %>
@@ -47,7 +48,7 @@
 			</ul>
 		</main>
 		<footer>
-			&copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020 |
+			&copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020&ndash;<%= Date.today.year %> |
 			<a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
 			a <a href="https://things.danq.me/">Dan Q Thing</a>
 		</footer>
