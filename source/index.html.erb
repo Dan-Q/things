@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Dan Q's Things</title>
-		<%= stylesheet_link_tag 'things' %>
-		<%= javascript_include_tag 'things' %>
-	</head>
-	<body class="h-feed">
-		<header>
-			<h1 class="p-name">
-				<a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a>'s Things
-			</h1>
-			<p>
-				A selection of stuff Dan has done around the Web.
-			</p>
-		</header>
-		<main>
-			<ul class="things">
-				<% data.things.
-					sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (thing_image(t) ? 1 : 0) + rand}.
-					reverse.
-					each do |thing| %>
-					<% image = thing_image(thing) %>
-					<li class="h-entry" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
-						<h2 class="p-name">
-							<a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
-								<%= thing.name %>
-							</a>
-						</h2>
-						<p class="e-content">
-							<%= thing.description %>
-						</p>
-						<ul class="tags">
-							<% if thing.status %>
-								<li class="tag p-category"><%= thing.status %></li>
-							<% end %>
-							<% if thing.url && thing.about %>
-								<li class="tag"><a href="<%= thing.about %>">about</a></li>
-							<% end %>
-							<% if (thing.url || thing.about) && thing.source %>
-								<li class="tag"><a href="<%= thing.source %>">source</a></li>
-							<% end %>
-						</ul>
-					</li>
-				<% end %>
-			</ul>
-		</main>
-		<footer>
-			&copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020&ndash;<%= Date.today.year %> |
-			<a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
-			a <a href="https://things.danq.me/">Dan Q Thing</a>
-		</footer>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dan Q's Things</title>
+    <%= stylesheet_link_tag 'https://danq.me/_q26t/style.css', 'things' %>
+    <%= javascript_include_tag 'things' %>
+  </head>
+  <body>
+    <div id="page">
+      <header id="site-header" class="site-header">
+        <h1>
+          <a class="h-card p-author" href="https://danq.me/">
+            <svg class="p-name u-logo" aria-labelledby="title" height="138.24" role="img" viewBox="0 0 134.81 36.58" width="509.52" xmlns="http://www.w3.org/2000/svg">
+            <title id="title">
+              <span class="p-given-name">Dan</span> <span class="p-family-name">Q</span>
+            </title>
+            <g stroke-width=".26">
+              <path d="M71.93 13.16v23.16h-7.01V.25h5.59l18.64 23.78V.3h7.01v36.02h-5.84zM0 36.32V.25h13.1q5.9 0 9.86 2.44 3.96 2.39 5.94 6.5 1.99 4.07 1.99 9.05 0 5.48-2.19 9.55t-6.2 6.3q-3.96 2.23-9.4 2.23zm23.82-18.08q0-3.5-1.27-6.15-1.27-2.7-3.65-4.17Q16.5 6.4 13.1 6.4H7.02v23.77h6.1q3.45 0 5.84-1.52 2.39-1.57 3.6-4.27 1.27-2.74 1.27-6.14zM42.18.25h7.12l13.25 36.07h-7.21l-3.35-8.99h-12.6l-3.3 9h-7.22zm8.54 22.15L45.74 7.52 40.56 22.4z" style="fill: var(--logo-text-light);"></path>
+              <path d="M106.09 4.02a19.72 19.72 0 00-5.35 7.4 18.68 18.68 0 00-.05 13.61 18.2 18.2 0 009.1 10 16.79 16.79 0 007.2 1.55 16.56 16.56 0 009.13-2.62l2.1 2.36h6.6l-11.89-13.36h-6.6l5.54 6.23-.3.17a9.77 9.77 0 01-4.52 1.02 9.65 9.65 0 01-7.78-3.7 12.36 12.36 0 01-2.03-3.87 14.51 14.51 0 01-.05-8.89 13.15 13.15 0 013.15-5.12z" style="fill: var(--q-pri);"></path>
+              <path d="M117.15 0c-2.57 0-4.94.5-7.11 1.52-1.17.54-2.26 1.2-3.26 1.96L111 8.22a9.5 9.5 0 016.05-2.03c1.62 0 3.08.35 4.37 1.02a9.88 9.88 0 013.3 2.7 11.8 11.8 0 012.08 3.86 13.63 13.63 0 01.05 8.89c-.25.8-.57 1.57-.96 2.3l4.56 5.13a18.3 18.3 0 002.9-18.4 20.14 20.14 0 00-3.55-5.9 17.07 17.07 0 00-5.54-4.22A15.89 15.89 0 00117.15 0z" style="fill: var(--q-sec);"></path>
+            </g></svg>
+          </a>
+          <span class="header-posessive">'s</span>
+          <span class="header-things">Things</span>
+        </h1>
+      </header>
+      <main id="content">
+        <section class="site-main">
+          <ul class="things h-feed">
+            <% data.things.
+              sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (thing_image(t) ? 1 : 0) + rand}.
+              reverse.
+              each do |thing| %>
+              <% image = thing_image(thing) %>
+              <li class="h-entry" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
+                <h2 class="p-name">
+                  <a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
+                    <%= thing.name %>
+                  </a>
+                </h2>
+                <p class="e-content">
+                  <%= thing.description %>
+                </p>
+                <ul class="tags">
+                  <% if thing.status %>
+                    <li class="tag p-category"><%= thing.status %></li>
+                  <% end %>
+                  <% if thing.url && thing.about %>
+                    <li class="tag"><a href="<%= thing.about %>">about</a></li>
+                  <% end %>
+                  <% if (thing.url || thing.about) && thing.source %>
+                    <li class="tag"><a href="<%= thing.source %>">source</a></li>
+                  <% end %>
+                </ul>
+              </li>
+            <% end %>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        &copy; <a href="https://danq.me/" class="h-card p-author u-url">Dan Q</a> 2020&ndash;<%= Date.today.year %> |
+        <a href="https://github.com/dan-q/things"><abbr title="GNU Public License, version 3">GPLv3</abbr></a> |
+        a <a href="https://things.danq.me/">Dan Q Thing</a>
+      </footer>
+    </div>
+  </body>
 </html>
