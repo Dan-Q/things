@@ -1,94 +1,52 @@
 @font-face {
-  font-family: 'Raleway';
+  font-display: block;
+  font-family: 'Lobster';
   font-style: normal;
   font-weight: 400;
-  src: local("Raleway"), local("Raleway-Regular"), url(/fonts/raleway-v11-latin-regular.woff2) format("woff2"), url(/fonts/raleway-v11-latin-regular.woff) format("woff");
-  font-display: swap;
+  src: url('/fonts/lobster-v32-latin-regular.woff2') format('woff2');
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #eee;
-  color: #333;
-  margin: 0;
-}
 
-header, footer {
-  background: white;
-  padding: 0.75rem;
-  text-align: center;
-}
-
-footer {
-  font-size: 80%;
-}
-
-a {
-  color: #155a93;
-}
-
-ul {
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.h-entry {
-  background-color: white;
-  background-position: center center;
-  background-size: cover;
-  color: inherit;
-  display: block;
-  flex-grow: 1;
-  list-style: none;
-  margin: 0.75rem;
-  padding: 10rem 0 0;
-  position: relative;
-  text-decoration: none;
-
-  h2, p {
-    padding: 0 0.75rem 1rem;
-    background-color: #ffffffcc;
-    margin: 0;
+#site-header {
+  h1 {
+    display: grid;
+    grid-template: "name posessive" "things things";
+    gap: 0.1ch;
+    padding: 30px;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--logo-text-light);
   }
 
-  .u-url {
-    color: #333;
-    text-decoration: none;
+  .p-name {
+    padding: 0;
+    height: 48px;
+    max-height: unset;
+    justify-self: end;
+    width: auto;
+  }
 
-    &::after {
-      bottom: 0;
-      content: "";
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      border: 4px solid #eee;
-    }
+  .header-posessive {
+    justify-self: start;
+  }
 
-    &:hover::after, &:focus::after {
-      border-color: #155a93;
-    }
+  .header-things {
+    grid-area: things;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-transform: lowercase;
+    font-size: 72px;
+    animation: things 3s ease-in-out alternate infinite;
   }
 }
 
-.tags {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  text-transform: uppercase;
-  font-size: 80%;
-  gap: 0.5rem;
-}
-
-.tag {
-  background: lightblue;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  list-style: none;
-
-  a {
-    color: #333;
+@keyframes things {
+  0% {
+    transform: rotate(-1deg) scale(1);
+    text-shadow: black 4px 4px;
+  }
+  100% {
+    transform: rotate(-7deg) scale(1.1);
+    text-shadow: black 14px 14px;
   }
 }

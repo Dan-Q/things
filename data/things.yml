@@ -9,6 +9,8 @@
   description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
   url: https://things.danq.me/
   source: https://github.com/dan-q/things
+  screenshot:
+    url: https://things.danq.me/
   weight: 2
 
 - name: Find Dan Q
@@ -245,7 +247,7 @@
   image: countdown.webp
 
 - name: BBC News RSS Feeds (that don't suck!)
-  description:  BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.
+  description: BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.
   source: https://github.com/Dan-Q/bbc-feeds
   about: https://bbc-feeds.danq.dev/
   url: https://bbc-feeds.danq.dev/
