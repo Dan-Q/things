@@ -51,6 +51,13 @@
   }
 }
 
+.things {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @keyframes things {
   0% {
     transform: rotate(-1deg) scale(1);
