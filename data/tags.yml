@@ -1,0 +1,18 @@
+- category: License
+  type: radio
+  tags:
+    - tag: closed-source
+      name: Closed source
+    - tag: open-source
+      name: Any open source license
+    - tag: agpl
+      name: GNU AGPL
+    - tag: unlicense
+      name: The Unlicense
+- category: Technology
+  type: checkbox
+  tags:
+    - tag: php
+      name: PHP
+    - tag: ruby
+      name: Ruby

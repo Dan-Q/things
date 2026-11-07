@@ -5,6 +5,7 @@
   image: dan-q.webp
   cssClass: major
   weight: 4
+  tags: [closed-source]
 
 - name: Dan Q's Things
   description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
@@ -14,12 +15,14 @@
     url: https://things.danq.me/
   cssClass: major
   weight: 2
+  tags: [open-source, agpl, ruby]
 
-- name: Find Dan Q
+- name: Where's Dan Q
   description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
-  url: https://find.danq.me/
+  url: https://wheres.danq.me/
   image: find.webp
   weight: 2
+  tags: [closed-source]
 
 - name: text/plain blog
   description: Who said a blog needed to be in HTML, anyway?
@@ -28,6 +31,7 @@
   source: https://github.com/dan-Q/textplain.blog
   image: textplain.webp
   weight: 2
+  tags: [open-source, unlicense, php]
 
 - name: Mastermind Solver
   description: Plays a smarter game of Mastermind than you, probably.

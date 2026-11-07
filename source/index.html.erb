@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dan Q's Things</title>
     <%= stylesheet_link_tag 'https://danq.me/_q26t/style.css', 'things' %>
+    <style>
+      <%= data.tags.flat_map{|cat| cat.tags.map(&:tag)}.map{|tag|
+        "main:has(.filters [data-tag=\"#{tag}\"]:checked) .h-entry:not([data-tags~=\"#{tag}\"])"
+      }.join(", \n      ") %> {
+        display: none;
+      }
+    </style>
     <%= javascript_include_tag 'things' %>
   </head>
   <body>
@@ -43,13 +50,41 @@
       </header>
       <main id="content">
         <section class="site-main">
+          <div id="filters-popup">
+            <ul class="filters">
+              <% data.tags.each do |cat| %>
+                <li class="filter-category">
+                  <%= cat.category %>
+                  <ul>
+                    <% if cat.type == 'radio' %>
+                      <li>
+                        <label>
+                          <input type="radio" name="filter-category-<%= cat.category %>" value="1" checked>
+                          Any
+                        </label>
+                      </li>
+                    <% end %>
+                    <% cat.tags.each do |tag| %>
+                      <li class="filter-tag">
+                        <label>
+                          <input type="<%= cat.type %>" name="filter-category-<%= cat.category %>" data-tag="<%= tag.tag %>" value="1">
+                          <%= tag.name %>
+                        </label>
+                      </li>
+                    <% end %>
+                  </ul>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+
           <ul class="things h-feed">
             <% data.things.
               sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (thing_image(t) ? 1 : 0) + rand}.
               reverse.
               each do |thing| %>
               <% image = thing_image(thing) %>
-              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
+              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{image}');\"" if image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
                 <h2 class="p-name">
                   <a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
                     <%= thing.name %>
