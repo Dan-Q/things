@@ -49,7 +49,7 @@
               reverse.
               each do |thing| %>
               <% image = thing_image(thing) %>
-              <li class="h-entry" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
+              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{image}');\"" if image %>>
                 <h2 class="p-name">
                   <a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
                     <%= thing.name %>

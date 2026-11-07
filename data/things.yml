@@ -3,6 +3,7 @@
   url: https://danq.me/
   about: https://danq.me/colophon/
   image: dan-q.webp
+  cssClass: major
   weight: 4
 
 - name: Dan Q's Things
@@ -11,6 +12,7 @@
   source: https://github.com/dan-q/things
   screenshot:
     url: https://things.danq.me/
+  cssClass: major
   weight: 2
 
 - name: Find Dan Q

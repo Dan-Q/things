@@ -6,10 +6,14 @@
   src: url('/fonts/lobster-v32-latin-regular.woff2') format('woff2');
 }
 
-
 #site-header {
   color: var(--logo-text-light);
   font-size: 26px;
+  justify-content: center;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
 
   h1 {
     display: grid;
@@ -57,7 +61,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 4rem 0.75rem;
+  gap: 1.25rem 0.75rem;
 }
 
 .h-entry {
@@ -73,6 +77,15 @@
   box-shadow: 0 70px 63px -60px #000;
   border-radius: var(--outer-border-radius);
   position: relative;
+  width: clamp(30%, 280px, 100%);
+
+  &.major {
+    width: 100%;
+  }
+
+  &.minor {
+    width: clamp(20%, 100px, 50%);
+  }
 
   &::after {
     --inner-border-gap: 0.15rem;
