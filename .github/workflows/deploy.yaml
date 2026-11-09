@@ -10,18 +10,18 @@ on:
 jobs:
   build:
     name: Build website
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
-        with: 
-          ruby-version: '3.3.4'
+        with:
+          ruby-version: '4.0.7'
 
       - name: Ruby gem cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
@@ -34,16 +34,16 @@ jobs:
           bundle install --jobs 4 --retry 3
      
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - name: Install Puppeteer
         run: npm ci || npm install
 
       - name: Screenshot cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: screenshots
           key: screenshots-${{ github.run_id }}
@@ -57,7 +57,7 @@ jobs:
         run: echo "things.danq.me" > build/CNAME
 
       - name: Deploy to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
