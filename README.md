@@ -6,16 +6,35 @@ Single-page site promoting "things" that [Dan Q](https://danq.me/) has made, aro
 
 ## Dependencies
 
-- Ruby
+- Ruby (for Middleman, used to generate the static site)
+- Node.js (for Puppeteer, used to take screenshots, and dev serving)
 
 ## Installation
 
 - `bundle install`
-- `middleman build` (or `middleman` for a live 'watcher')
+- `npm install` (and, if Puppeteer didn't fetch it, `npx puppeteer browsers install chrome`)
+
+## Development
+
+- `npm run dev` runs the watcher and the server together, and Ctrl-C stops both. The first build happens on startup.
+- `npm run serve` serves build/
+- `npm run watch` only does the watching and rebuilding.
+- `npm run build` just does a static build
 
 ## Usage
 
 Define "things" in `data/things.yml`.
+
+Each thing can have an `image:` (a file in `source/images/`), or a `screenshot:` instead:
+
+```yaml
+screenshot:
+  url: https://example.com/   # defaults to the thing's own url
+  width: 1280                 # optional, default 1920
+  height: 720                 # optional, default 1080
+```
+
+At build time, Puppeteer screenshots the page into `screenshots/` (cache; ignored by git) and the result is copied to the build's `images/`. A screenshot is retaken only if the cached one is older than 7 days (`Screenshots::CACHE_MAX_AGE` in `lib/screenshots.rb`).
 
 ## License
 

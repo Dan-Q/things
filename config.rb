@@ -5,6 +5,36 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Screenshots: things with `screenshot:` instead of `image:` get a (cached)
+# Puppeteer screenshot, which is copied into the build's images/ directory
+require_relative 'lib/screenshots'
+
+screenshot_files = {}
+
+before_build do
+  raw = YAML.safe_load(File.read(File.join(__dir__, 'data', 'things.yml')))
+  screenshot_files.merge!(Screenshots.generate(raw))
+end
+
+after_build do |builder|
+  images_dir = File.join(config[:build_dir], 'images')
+  FileUtils.mkdir_p(images_dir)
+  screenshot_files.each_value do |path|
+    FileUtils.cp(path, images_dir)
+    builder.thor.say_status :create, File.join('images', File.basename(path))
+  end
+end
+
+helpers do
+  # The image for a thing: its `image:`, or else its screenshot (if one exists)
+  def thing_image(thing)
+    return thing.image if thing.image
+    return unless thing.screenshot
+    file = Screenshots.filename_for('name' => thing.name)
+    file if File.exist?(File.join(Screenshots::CACHE_DIR, file))
+  end
+end
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

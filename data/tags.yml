@@ -1,0 +1,47 @@
+- category: Concepts
+  type: checkbox
+  tags:
+    - tag: games
+      name: Games
+    - tag: puzzles
+      name: Puzzles
+    - tag: gnss
+      name: GNSS (GPS)
+    - tag: programming
+      name: Programming
+    - tag: security
+      name: Security
+    - tag: music
+      name: Music
+    - tag: maths
+      name: Mathematics
+- category: Technologies
+  type: checkbox
+  tags:
+    - tag: php
+      name: PHP
+    - tag: ruby
+      name: Ruby
+    - tag: js
+      name: JavaScript
+    - tag: rss
+      name: RSS
+    - tag: wordpress
+      name: ClassicPress/WordPress
+- category: License
+  type: radio
+  tags:
+    - tag: closed-source
+      name: Closed source
+    - tag: open-source
+      name: Any open source license
+    - tag: agpl
+      name: GNU AGPL
+    - tag: gpl
+      name: GNU GPL
+    - tag: lgpl
+      name: GNU LGPL
+    - tag: mit
+      name: MIT
+    - tag: unlicense_or_cc0
+      name: The Unlicense or CC0
