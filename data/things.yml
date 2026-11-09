@@ -243,7 +243,9 @@
   description: Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.
   url: https://raw.githubusercontent.com/Dan-Q/labscomic-archives-to-rss/master/output.rss
   source: https://github.com/Dan-Q/labscomic-archives-to-rss
+  image: labs-rss.png
   weight: -1
+  cssClass: background-contain
   tags: [open-source, gpl, ruby, rss]
 
 - name: Pong HW
