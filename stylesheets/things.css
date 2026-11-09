@@ -90,8 +90,12 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center; }
+  .h-entry.background-top {
+    background-position: top center; }
   .h-entry.background-bottom {
     background-position: bottom center; }
+  .h-entry.no-top-padding {
+    padding-top: 0; }
   .h-entry.major {
     width: 100%; }
   .h-entry.minor {
@@ -135,7 +139,8 @@ body {
     display: flex;
     text-transform: uppercase;
     font-size: 80%;
-    gap: 0.5rem; }
+    gap: 0.5rem;
+    overflow-y: scroll; }
   .h-entry .tag {
     background: var(--alt2-bg);
     padding: 0.25rem 0.5rem;
