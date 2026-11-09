@@ -49,7 +49,7 @@ helpers do
       score = (%w[Dead Down].include?(thing.status) ? -3 : 0) +
               (thing.status == 'Abandoned' ? -2 : 0) +
               (thing.weight || 0) + (image ? 1 : 0) + rand
-      [score, thing.to_h.merge('image' => image)]
+      [score, thing.to_h.merge('image' => image, 'created' => (thing.created || '2020-09-07').to_time)]
     }.sort_by(&:first).reverse.map { |_, attrs| Hashie::Mash.new(attrs) }
   end
 end
