@@ -30,7 +30,7 @@ helpers do
   def thing_image(thing)
     return thing.image if thing.image
     return unless thing.screenshot
-    file = Screenshots.filename_for('name' => thing.name)
+    file = Screenshots.filename_for('name' => thing.name, 'url' => thing.url, 'screenshot' => thing.screenshot)
     file if File.exist?(File.join(Screenshots::CACHE_DIR, file))
   end
 end

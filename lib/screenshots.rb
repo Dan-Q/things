@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'digest'
 require 'json'
 require 'open3'
 
@@ -21,7 +22,10 @@ module Screenshots
 
   def filename_for(thing)
     slug = thing['name'].to_s.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/\A-+|-+\z/, '')
-    "#{slug.empty? ? 'thing' : slug}.#{EXTENSION}"
+    # The hash of what is being captured means a changed URL/size is a cache miss
+    opts = options_for(thing)
+    digest = Digest::SHA256.hexdigest([opts['url'], opts['width'], opts['height']].join('|'))[0, 10]
+    "#{slug.empty? ? 'thing' : slug}-#{digest}.#{EXTENSION}"
   end
 
   def path_for(thing)
