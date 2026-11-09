@@ -12,7 +12,6 @@
         display: none;
       }
     </style>
-    <%= javascript_include_tag 'things' %>
   </head>
   <body>
     <div id="page">
@@ -50,7 +49,11 @@
       </header>
       <main id="content">
         <section class="site-main">
-          <div id="filters-popup">
+          <button id="filters-button" popovertarget="filters-popup"><span>Filters</span></button>
+          <div id="filters-popup" popover>
+            <p>
+              Only Things matching <em>all</em> selected filters will be shown:
+            </p>
             <ul class="filters">
               <% data.tags.each do |cat| %>
                 <li class="filter-category">
@@ -85,25 +88,27 @@
               each do |thing| %>
               <% image = thing_image(thing) %>
               <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{image}');\"" if image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
-                <h2 class="p-name">
-                  <a href="<%= thing.url || thing.about || thing.source %>" class="u-url">
-                    <%= thing.name %>
-                  </a>
-                </h2>
-                <p class="e-content">
-                  <%= thing.description %>
-                </p>
-                <ul class="tags">
-                  <% if thing.status %>
-                    <li class="tag p-category"><%= thing.status %></li>
-                  <% end %>
-                  <% if thing.url && thing.about %>
-                    <li class="tag"><a href="<%= thing.about %>">about</a></li>
-                  <% end %>
-                  <% if (thing.url || thing.about) && thing.source %>
-                    <li class="tag"><a href="<%= thing.source %>">source</a></li>
-                  <% end %>
-                </ul>
+                <div class="h-entry-details">
+                  <h2 class="p-name">
+                    <a href="<%= thing.url || thing.about || thing.source %>" class="u-url" target="_blank">
+                      <%= thing.name %>
+                    </a>
+                  </h2>
+                  <p class="e-content">
+                    <%= thing.description %>
+                  </p>
+                  <ul class="tags">
+                    <% if thing.status %>
+                      <li class="tag p-category"><%= thing.status %></li>
+                    <% end %>
+                    <% if thing.url && thing.about %>
+                      <li class="tag"><a href="<%= thing.about %>" target="_blank">about</a></li>
+                    <% end %>
+                    <% if (thing.url || thing.about) && thing.source %>
+                      <li class="tag"><a href="<%= thing.source %>" target="_blank">source</a></li>
+                    <% end %>
+                  </ul>
+                </div>
               </li>
             <% end %>
           </ul>

@@ -6,6 +6,15 @@
   src: url('/fonts/lobster-v32-latin-regular.woff2') format('woff2');
 }
 
+:root {
+  scrollbar-gutter: auto; /* regular scrollbar guttering, unlike Q26 */
+  --alt2-bg: #421a50; /* overridden; used for <body> bg among others */
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #site-header {
   color: var(--logo-text-light);
   font-size: 26px;
@@ -74,15 +83,27 @@
   background-color: white;
   background-position: center center;
   background-size: cover;
-  display: block;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   margin: 0.75rem;
   padding: 10rem 0 0;
   position: relative;
   box-shadow: 0 70px 63px -60px #000;
   border-radius: var(--outer-border-radius);
   position: relative;
-  width: clamp(30%, 280px, 100%);
+  width: clamp(30%, 300px, 100%);
+
+  &.background-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &.background-bottom {
+    background-position: bottom center;
+  }
 
   &.major {
     width: 100%;
@@ -103,13 +124,7 @@
     height: calc(100% - (var(--inner-border-gap) * 2));
     pointer-events: none;
     border-radius: calc(var(--outer-border-radius) - var(--inner-border-gap));
-    transition: border-color 0.3s ease-out;
-  }
-
-  &:hover, &:focus-within {
-    &::after {
-      border-color: var(--q-pri);
-    }
+    transition: border-color 0.15s ease-out, border-width 0.4s ease-out;
   }
 
   .u-url::after {
@@ -119,6 +134,51 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  .h-entry-details {
+    padding: 1rem;
+    border-radius: 0 0 var(--outer-border-radius) var(--outer-border-radius);
+    background: linear-gradient(to bottom, #fff9, #fffd);
+    border-top: 1px solid #0004;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .tags {
+    position: relative; // punch-through
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 80%;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background: var(--alt2-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    list-style: none;
+
+    &, a {
+      color: #fff;
+    }
+  }
+
+  &:hover, &:focus-within {
+    &::after {
+      border-color: var(--q-pri);
+      border-width: 4px;
+    }
   }
 }
 
@@ -130,6 +190,134 @@
   100% {
     transform: rotate(-7deg) scale(1.1);
     text-shadow: black 14px 14px;
+  }
+}
+
+/* Filters */
+
+:root {
+  --filters-button-width: 56px;
+  --filters-popup-width: max(33vw, 300px);
+}
+
+#filters-button {
+  border: 0;
+  background: #b3b386;
+  position: fixed;
+  top: 5rem;
+  left: calc(100vw - var(--filters-button-width));
+  transition: left 0.2s ease-out;
+  cursor: pointer;
+  height: var(--filters-button-width);
+  transform-origin: top center;
+  transform: rotateZ(90deg);
+  z-index: 9;
+  padding: 8px 12px 8px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 4px 4px 8px #0005-4px 0 8px #0005;
+
+  span {
+    background: white;
+    color: black;
+    padding: 2px 6px;
+    font-family: monospace;
+    display: block;
+    transform: rotateZ(-2deg);
+  }
+}
+
+:has(#filters-popup:popover-open) #filters-button {
+  left: calc(100vw - var(--filters-popup-width) - (var(--filters-button-width) * 0.6))
+}
+
+#filters-popup {
+  width: var(--filters-popup-width);
+  height: 100%;
+  position: fixed;
+  transition: left 0.2s ease-out;
+  display: block;
+  content-visibility: visible;
+  left: 100vw; /* exit state */
+  border: 0;
+  background: #b3b386;
+  z-index: 9;
+  padding: 0 32px 0 18px;
+
+  input {
+    display: none; // Ensure it doesn't steal tab-focus; hacky!
+  }
+
+  &::backdrop {
+    background-color: transparent; /* exit state */
+    transition: all 0.3s allow-discrete;
+  }
+
+  &:popover-open {
+    left: calc(100vw - var(--filters-popup-width)); /* open state */
+    box-shadow: -4px 0 8px #0005;
+
+    input {
+      display: initial; // allow tab focus again; hacky!
+    }
+
+    @starting-style {
+      left: 100vw; /* enter state */
+    }
+
+    &::backdrop {
+      background-color: #0007; /* open state */
+      backdrop-filter: blur(4px);
+
+      @starting-style {
+        background-color: transparent; /* enter state */
+      }
+    }
+  }
+}
+
+/* While popover open, all links not in open popover are disabled: */
+:has([popover]:popover-open) {
+  a {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  [popover]:popover-open a {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+/* Filters list */
+.filters {
+  list-style: none;
+  padding: 0;
+
+  li {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    ul {
+      list-style: none;
+      margin-top: 4px;
+      padding-left: 2ch;
+    }
+
+    li {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+}
+
+/* Footer */
+
+footer {
+  color: var(--text-light);
+  margin: 1rem 1rem 2rem;
+
+  a, a:hover, a:focus {
+    color: white;
   }
 }
 
