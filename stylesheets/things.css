@@ -172,6 +172,30 @@ body {
             transform: rotate(-7deg) scale(1.1);
     text-shadow: black 14px 14px; } }
 
+/* RSS */
+#rss {
+  display: block;
+  background: #f0941a;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  left: -24px;
+  top: 110px;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-box-shadow: 4px 4px 8px #0005;
+          box-shadow: 4px 4px 8px #0005; }
+  #rss:hover {
+    -webkit-transform: rotate(8deg) translate(39px, -16px) scale(1.2);
+            transform: rotate(8deg) translate(39px, -16px) scale(1.2); }
+
 /* Filters */
 :root {
   --filters-button-width: 56px;

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dan Q's Things</title>
+    <description>Things Dan Q has made and put onto the Internet.</description>
+    <link>https://things.danq.me/</link>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 27 Sep 1998 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://things.danq.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <guid>https://skelly.monster/</guid>
+      <link>https://skelly.monster/</link>
+      <title>Dem Bones!</title>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Use your mobile phone as a marionnette controller; make the skeleton on your screen dance!</description>
+    </item>
+    <item>
+      <guid>https://ascending.danq.dev/</guid>
+      <link>https://ascending.danq.dev/</link>
+      <title>Ascending</title>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Up the wooden hill with you, even if you're just a pile of tumbling shapes.</description>
+    </item>
+    <item>
+      <guid>https://incognito.danq.dev/</guid>
+      <link>https://incognito.danq.dev/</link>
+      <title>Incognito Mode for Wikipedia</title>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Does not actually do anything for your privacy or security. Very silly.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/mouse/</guid>
+      <link>https://danq.me/mouse/</link>
+      <title>Move the mouse across the screen</title>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+      <description>A mouse curser [sic] and an example of extreme skeuomorphism?</description>
+    </item>
+    <item>
+      <guid>https://origami.danq.dev/</guid>
+      <link>https://origami.danq.dev/</link>
+      <title>Origami</title>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+      <description>A love letter to the Weird Wide Web. My heart goes out to you.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2026/08/04/beepalive/</guid>
+      <link>https://danq.me/2026/08/04/beepalive/</link>
+      <title>BeepAlive</title>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Keep-alive code to stop speakers from going to sleep... by playing tiny inaudible clicks in the background!</description>
+    </item>
+    <item>
+      <guid>https://embed-html.danq.dev/</guid>
+      <link>https://embed-html.danq.dev/</link>
+      <title>&amp;lt;embed-html&amp;gt;</title>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <description>A HTML web component for dynamic loading of HTML within HTML.</description>
+    </item>
+    <item>
+      <guid>https://alt-lightbox.danq.dev/</guid>
+      <link>https://alt-lightbox.danq.dev/</link>
+      <title>Alt Lightboxes</title>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <description>A technique for HTML+CSS-only lightbox popups with alt-text overlays.</description>
+    </item>
+    <item>
+      <guid>https://beige-buttons.danq.dev/</guid>
+      <link>https://beige-buttons.danq.dev/</link>
+      <title>&amp;lt;beige-buttons&amp;gt;</title>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <description>A reusable web component for adding beige Turbo and Reset buttons to your site.</description>
+    </item>
+    <item>
+      <guid>https://best-resolution.danq.dev/</guid>
+      <link>https://best-resolution.danq.dev/</link>
+      <title>Best Resolution</title>
+      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <description>An 88&amp;times;31 that says the best resolution to use a site is... your current resolution!</description>
+    </item>
+    <item>
+      <guid>https://changeyourstarsign.com/</guid>
+      <link>https://changeyourstarsign.com/</link>
+      <title>Change Your Star Sign</title>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <description>This one weird trick means that you can change your star sign to any that you want!</description>
+    </item>
+    <item>
+      <guid>https://bbc-feeds.danq.dev/</guid>
+      <link>https://bbc-feeds.danq.dev/</link>
+      <title>BBC News RSS Feeds (that don't suck!)</title>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
+      <description>BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.</description>
+    </item>
+    <item>
+      <guid>https://egxchange.org/</guid>
+      <link>https://egxchange.org/</link>
+      <title>EGXchange</title>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <description>Digital wallet for Emma GoldCoin.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2024/08/15/draw-me-a-comment/</guid>
+      <link>https://danq.me/2024/08/15/draw-me-a-comment/</link>
+      <title>Drawings as WordPress Comments</title>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <description>What if a blog comment... could be a sketch rather than text?</description>
+    </item>
+    <item>
+      <guid>https://danq.me/tag/dancast/</guid>
+      <link>https://danq.me/tag/dancast/</link>
+      <title>Dan Q - The Podcast</title>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <description>The podcast that nobody asked for. Exclusively about things that only Dan Q cares about.</description>
+    </item>
+    <item>
+      <guid>https://textplain.blog/</guid>
+      <link>https://textplain.blog/</link>
+      <title>text/plain blog</title>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <description>Who said a blog needed to be in HTML, anyway?</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2024/01/28/bloganuary-2024-28/</guid>
+      <link>https://danq.me/2024/01/28/bloganuary-2024-28/</link>
+      <title>Not The Lottery</title>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+      <description>Visualise how much you're &lt;em&gt;not&lt;/em&gt; going to win EuroMillions.</description>
+    </item>
+    <item>
+      <guid>https://dan-q.github.io/replacement-population-growth-simulation/</guid>
+      <link>https://dan-q.github.io/replacement-population-growth-simulation/</link>
+      <title>Replacement Population Growth Simulator</title>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <description>'Replacement' population actually results in population growth while life expectancy increases. Let me prove it to you.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2023/11/30/length-extension-attack/</guid>
+      <link>https://danq.me/2023/11/30/length-extension-attack/</link>
+      <title>SHA1 Length Extension Attack Demonstration</title>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <description>Length extension attacks are hard to understand. So I made a demonstrative explainer.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2023/09/10/capsulepress/</guid>
+      <link>https://danq.me/2023/09/10/capsulepress/</link>
+      <title>CapsulePress</title>
+      <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
+      <description>Opinionated Gemini/Spartan/Gopher server with a WordPress backend.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/well-known-feeds</guid>
+      <link>https://github.com/Dan-Q/well-known-feeds</link>
+      <title>.well-known/feeds</title>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <description>Proposed specification to make it easier to discover RSS (etc.) feeds that represent an entire website.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/mattify</guid>
+      <link>https://github.com/Dan-Q/mattify</link>
+      <title>Mattify</title>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+      <description>If you like it, you should'a put'a hat on it.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/php4-transparent-session-demo</guid>
+      <link>https://github.com/Dan-Q/php4-transparent-session-demo</link>
+      <title>PHP4 Transparent Session Demo</title>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <description>PHP4 had a strange feature to try to work around the fact that cookies weren't yet universally supported.</description>
+    </item>
+    <item>
+      <guid>https://sisyphus.danq.dev/</guid>
+      <link>https://sisyphus.danq.dev/</link>
+      <title>Sisyphus: The Game</title>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      <description>Terrible implementation of a stupid board game idea</description>
+    </item>
+    <item>
+      <guid>https://danq.me/wp-content/uploads/mastermind.html</guid>
+      <link>https://danq.me/wp-content/uploads/mastermind.html</link>
+      <title>Mastermind Solver</title>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      <description>Plays a smarter game of Mastermind than you, probably.</description>
+    </item>
+    <item>
+      <guid>https://dndle.app/</guid>
+      <link>https://dndle.app/</link>
+      <title>DNDle</title>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      <description>Like Wordle, but you guess D&amp;D monsters by picking attributes.</description>
+    </item>
+    <item>
+      <guid>https://axe-feather.danq.dev/</guid>
+      <link>https://axe-feather.danq.dev/</link>
+      <title>Axe Feather</title>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <description>Recreation of an 2004 Flash-based ad using modern web technologies.</description>
+    </item>
+    <item>
+      <guid>https://abnib.co.uk/</guid>
+      <link>https://abnib.co.uk/</link>
+      <title>Abnib Birthdays</title>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      <description>Birthday reminders for Abnib folks.</description>
+    </item>
+    <item>
+      <guid>https://addons.thunderbird.net/en-GB/thunderbird/addon/protonmail-encryption-status/</guid>
+      <link>https://addons.thunderbird.net/en-GB/thunderbird/addon/protonmail-encryption-status/</link>
+      <title>ProtonMail Encryption Status for Thunderbird</title>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <description>Visual indicator of how your Proton Bridge &lt;-&gt; Thunderbird emails were encrypted.</description>
+    </item>
+    <item>
+      <guid>https://things.danq.me/</guid>
+      <link>https://things.danq.me/</link>
+      <title>Dan Q's Things</title>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <description>You're looking at it! A curated list of Dan Q's "Things" around the Internet.</description>
+    </item>
+    <item>
+      <guid>https://thegreen.q-t-a.uk/</guid>
+      <link>https://thegreen.q-t-a.uk/</link>
+      <title>The Green</title>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      <description>Where Dan and his family live.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2020/06/27/break-into-us/</guid>
+      <link>https://danq.me/2020/06/27/break-into-us/</link>
+      <title>Break Into Us</title>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <description>Lock-breaking puzzle game.</description>
+    </item>
+    <item>
+      <guid>https://wheres.danq.me/</guid>
+      <link>https://wheres.danq.me/</link>
+      <title>Where's Dan Q</title>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <description>Real-time tracking of Dan's location. Fuzzed for unauthenticated users.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2020/03/01/post-kinds-rss/</guid>
+      <link>https://danq.me/2020/03/01/post-kinds-rss/</link>
+      <title>WordPress Post Kinds RSS Prefixer</title>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <description>WordPress RSS tweak to show the IndieWeb post "kind" as a prefix.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/power-button</guid>
+      <link>https://github.com/Dan-Q/power-button</link>
+      <title>Power Button</title>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      <description>Command-line tool to allow e.g. an Arduino to trigger commands on remote computers.</description>
+    </item>
+    <item>
+      <guid>https://geohashing.site/geohashing/Main_Page</guid>
+      <link>https://geohashing.site/geohashing/Main_Page</link>
+      <title>Geohashing Wiki</title>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      <description>Adopted from XKCD, the central resource for geohashers worldwide.</description>
+    </item>
+    <item>
+      <guid>https://cheatman.danq.me/</guid>
+      <link>https://cheatman.danq.me/</link>
+      <title>Cheatman</title>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      <description>A game of hangman that cheats (while keeping its lies internally-consistent).</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2019/09/03/counting-down/</guid>
+      <link>https://danq.me/2019/09/03/counting-down/</link>
+      <title>Workplace Countdown Timer</title>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      <description>Dan used this to put a "you have X time left to ask Dan a question" countdown up after he handed in his notice at a previous job.</description>
+    </item>
+    <item>
+      <guid>https://raw.githubusercontent.com/Dan-Q/labscomic-archives-to-rss/master/output.rss</guid>
+      <link>https://raw.githubusercontent.com/Dan-Q/labscomic-archives-to-rss/master/output.rss</link>
+      <title>LABS Comic Complete RSS Feed</title>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      <description>Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2019/06/17/14062/</guid>
+      <link>https://danq.me/2019/06/17/14062/</link>
+      <title>We Will Rock . EU</title>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      <description>Whomp whomp tish. Whomp whomp tish.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2019/04/03/nonstophammertime/</guid>
+      <link>https://danq.me/2019/04/03/nonstophammertime/</link>
+      <title>Non-Stop Hammer Ti . me</title>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      <description>Break it down!</description>
+    </item>
+    <item>
+      <guid>https://trrtl.com/</guid>
+      <link>https://trrtl.com/</link>
+      <title>TRRTL</title>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      <description>Coffee-drinking LOGO turtles.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2019/01/16/css-driven-console-graphics/</guid>
+      <link>https://danq.me/2019/01/16/css-driven-console-graphics/</link>
+      <title>CSS-Driven Console Graphics</title>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      <description>Convert a PNG image into some CSS code to inject into a browser's debugger.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2018/12/10/second-factor-safety-net/</guid>
+      <link>https://danq.me/2018/12/10/second-factor-safety-net/</link>
+      <title>Google Authenticator CLI</title>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <description>Command-line version of Google Authenticator, powered by Ruby.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2018/12/05/advent2018/</guid>
+      <link>https://danq.me/2018/12/05/advent2018/</link>
+      <title>Bodleian Advent Calendar</title>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <description>Interactive online advent calendar. Reveal a picture a day at a time.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2018/11/30/pong/</guid>
+      <link>https://danq.me/2018/11/30/pong/</link>
+      <title>Pong HW</title>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
+      <description>Reimplentation of Pong designed for ultrawide video walls.</description>
+    </item>
+    <item>
+      <guid>https://shadows.danq.me/</guid>
+      <link>https://shadows.danq.me/</link>
+      <title>Shadows Out of Time</title>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      <description>A Bodleian choose-your-own-destiny story.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2018/09/16/importing-geocaching-logs-into-wordpress/</guid>
+      <link>https://danq.me/2018/09/16/importing-geocaching-logs-into-wordpress/</link>
+      <title>Dan's Geocaching Reposter</title>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      <description>Plugin and bookmarklet to streamline importing geocaching logs into your WordPress blog, PESOS-style.</description>
+    </item>
+    <item>
+      <guid>https://www.reddit.com/r/megamegamonitor</guid>
+      <link>https://www.reddit.com/r/megamegamonitor</link>
+      <title>MegaMegaMonitor</title>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <description>Toolset to help members of private subreddits to find and talk to one another.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/rssey</guid>
+      <link>https://github.com/Dan-Q/rssey</link>
+      <title>RSSey</title>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <description>Anything-to-RSS converter based on headless Chrome.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/lunar.min.html</guid>
+      <link>https://danq.me/lunar.min.html</link>
+      <title>Lunar Lander</title>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      <description>A classic Lunar Lander game.</description>
+    </item>
+    <item>
+      <guid>https://fnorders.danq.dev/</guid>
+      <link>https://fnorders.danq.dev/</link>
+      <title>Fnorders</title>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <description>A Fnorders-generator in the style of the Fnorder by Steve Jackson Games.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/2017/04/28/steer/</guid>
+      <link>https://danq.me/2017/04/28/steer/</link>
+      <title>Steer!</title>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      <description>Tilt-sensor/websocket based driving game. Use your mobile to steer!</description>
+    </item>
+    <item>
+      <guid>https://dan-q.github.io/twee2/</guid>
+      <link>https://dan-q.github.io/twee2/</link>
+      <title>Twee2</title>
+      <pubDate>Thu, 13 Aug 2015 00:00:00 +0000</pubDate>
+      <description>Command-line compilation tools for Twine 2 interactive fiction.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/monte-carlo-pi.html</guid>
+      <link>https://danq.me/monte-carlo-pi.html</link>
+      <title>Monte Carlo Pi</title>
+      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
+      <description>Demonstration of using a Monte Carlo method to calculate Pi. In JavaScript.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/abnib</guid>
+      <link>https://github.com/Dan-Q/abnib</link>
+      <title>Abnib Blogs</title>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      <description>Community weblog aggregator powered by Jekyll.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/penney/index.html</guid>
+      <link>https://danq.me/penney/index.html</link>
+      <title>Penney's Game</title>
+      <pubDate>Tue, 09 Apr 2013 00:00:00 +0000</pubDate>
+      <description>Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.</description>
+    </item>
+    <item>
+      <guid>https://github.com/Dan-Q/keepass-opera</guid>
+      <link>https://github.com/Dan-Q/keepass-opera</link>
+      <title>KeePass for Opera</title>
+      <pubDate>Sun, 17 Jun 2012 00:00:00 +0000</pubDate>
+      <description>Plugin to enable Opera versions 12+ (but prior to the switch to the Chromium/Blink engine) to integrate with KeePass.</description>
+    </item>
+    <item>
+      <guid>http://www.freedeedpoll.org.uk/</guid>
+      <link>http://www.freedeedpoll.org.uk/</link>
+      <title>Free Deed Poll</title>
+      <pubDate>Mon, 24 Jan 2011 00:00:00 +0000</pubDate>
+      <description>Change your name for free and without a solicitor.</description>
+    </item>
+    <item>
+      <guid>https://danq.me/</guid>
+      <link>https://danq.me/</link>
+      <title>DanQ.me</title>
+      <pubDate>Sun, 27 Sep 1998 00:00:00 +0000</pubDate>
+      <description>Dan's personal website and blog. Centre of the Digital Daniverse.</description>
+    </item>
+  </channel>
+</rss>
