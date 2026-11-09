@@ -119,8 +119,8 @@ body {
   .h-entry .h-entry-details {
     padding: 1rem;
     border-radius: 0 0 var(--outer-border-radius) var(--outer-border-radius);
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff9), to(#fffd));
-    background: linear-gradient(to bottom, #fff9, #fffd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffa), to(#fffe));
+    background: linear-gradient(to bottom, #fffa, #fffe);
     border-top: 1px solid #0004; }
   .h-entry h2 {
     font-size: 1.2rem;
@@ -189,8 +189,8 @@ body {
   z-index: 9;
   padding: 8px 12px 8px;
   border-radius: 0 0 16px 16px;
-  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.333333) 0 8px #0005;
-          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.333333) 0 8px #0005; }
+  -webkit-box-shadow: 4px 4px 8px #0005;
+          box-shadow: 4px 4px 8px #0005; }
   #filters-button span {
     background: white;
     color: black;
