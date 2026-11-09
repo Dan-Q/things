@@ -2,8 +2,12 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <title>Dan Q's Things</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <%= stylesheet_link_tag 'https://danq.me/_q26t/style.css', 'things' %>
     <style>
       <%= data.tags.flat_map{|cat| cat.tags.map(&:tag)}.map{|tag|
@@ -12,6 +16,11 @@
         display: none;
       }
     </style>
+    <meta name="description" content="A curated collection of random Things put onto the Internet by Dan Q.">
+    <meta property="og:image" content="https://things.danq.me/og.png">
+    <meta property="og:url" content="https://things.danq.me/">
+    <link rel="me" href="https://danq.me/">
+    <meta property="fediverse:creator" content="@dan@danq.me" >
   </head>
   <body>
     <div id="page">
