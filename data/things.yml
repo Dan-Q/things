@@ -26,6 +26,14 @@
   weight: 2
   tags: [closed-source, js, gnss]
 
+- name: Free Deed Poll
+  description: Change your name for free and without a solicitor.
+  url: http://www.freedeedpoll.org.uk/
+  source: https://github.com/Dan-Q/freedeedpoll
+  image: deed.webp
+  weight: 2
+  tags: [open-source, agpl, js]
+
 - name: Ascending
   description: Up the wooden hill with you, even if you're just a pile of tumbling shapes.
   url: https://ascending.danq.dev/
@@ -230,14 +238,6 @@
   image: geohashing.webp
   weight: 1
   tags: [closed-source, php, gnss, games]
-
-- name: Free Deed Poll
-  description: Change your name for free and without a solicitor.
-  url: http://www.freedeedpoll.org.uk/
-  source: https://github.com/Dan-Q/freedeedpoll
-  image: deed.webp
-  weight: 2
-  tags: [open-source, agpl, js]
 
 - name: LABS Comic Complete RSS Feed
   description: Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.
