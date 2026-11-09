@@ -13,7 +13,7 @@
   url: https://things.danq.me/
   source: https://github.com/dan-q/things
   screenshot:
-    url: https://things.danq.me/
+    url: https://things.danq.me/?cachebuster=20261109
   cssClass: major
   weight: 2
   tags: [open-source, agpl, ruby]
