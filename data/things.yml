@@ -7,6 +7,7 @@
   cssClass: major
   weight: 5
   tags: [closed-source, php, ruby, wordpress]
+  created: '1998-09-27'
 
 - name: Dan Q's Things
   description: You're looking at it! A curated list of Dan Q's "Things" around the Internet.
@@ -14,6 +15,7 @@
   source: https://github.com/dan-q/things
   image: things.png
   tags: [open-source, agpl, ruby]
+  created: '2020-09-07'
 
 - name: Where's Dan Q
   description: Real-time tracking of Dan's location. Fuzzed for unauthenticated users.
@@ -22,6 +24,7 @@
     url: https://wheres.danq.me/
   weight: 2
   tags: [closed-source, js, gnss]
+  created: '2020-03-06'
 
 - name: Free Deed Poll
   description: Change your name for free and without a solicitor.
@@ -30,6 +33,7 @@
   image: deed.webp
   weight: 2
   tags: [open-source, agpl, js]
+  created: '2011-01-24'
 
 - name: Ascending
   description: Up the wooden hill with you, even if you're just a pile of tumbling shapes.
@@ -39,6 +43,7 @@
   image: ascending-og.png
   weight: 1
   tags: [open-source, unlicense_or_cc0, js, music]
+  created: '2026-10-17'
 
 - name: Incognito Mode for Wikipedia
   description: Does not actually do anything for your privacy or security. Very silly.
@@ -48,6 +53,7 @@
   image: incognito-og-980x515.webp
   weight: 1
   tags: [open-source, unlicense_or_cc0, js]
+  created: '2026-10-16'
 
 - name: Dem Bones!
   description: Use your mobile phone as a marionnette controller; make the skeleton on your screen dance!
@@ -57,6 +63,7 @@
   image: dem-bones-og-980x515.webp
   weight: 2
   tags: [open-source, unlicense_or_cc0, games, js]
+  created: '2026-10-19'
 
 - name: Origami
   description: A love letter to the Weird Wide Web. My heart goes out to you.
@@ -66,6 +73,7 @@
   image: origami-og-980x515.webp
   weight: 2
   tags: [open-source, unlicense_or_cc0, js]
+  created: '2026-10-08'
 
 - name: Move the mouse across the screen
   description: A mouse curser [sic] and an example of extreme skeuomorphism?
@@ -74,6 +82,7 @@
   image: mouse-og-980x515.webp
   weight: 1
   tags: [closed-source, js]
+  created: '2026-10-08'
 
 - name: text/plain blog
   description: Who said a blog needed to be in HTML, anyway?
@@ -84,6 +93,7 @@
   cssClass: background-contain
   weight: 1
   tags: [open-source, unlicense_or_cc0, php]
+  created: '2024-05-02'
 
 - name: Mastermind Solver
   description: Plays a smarter game of Mastermind than you, probably.
@@ -93,6 +103,7 @@
   image: mastermind.webp
   weight: 1
   tags: [open-source, mit, js, games, puzzles]
+  created: '2022-08-22'
 
 - name: DNDle
   description: Like Wordle, but you guess D&D monsters by picking attributes.
@@ -102,6 +113,7 @@
   image: dndle.webp
   weight: 2
   tags: [open-source, mit, js, games, puzzles]
+  created: '2022-02-15'
 
 - name: Change Your Star Sign
   description: This one weird trick means that you can change your star sign to any that you want!
@@ -111,6 +123,7 @@
   image: changeyourstarsign.webp
   weight: 1
   tags: [open-source, agpl]
+  created: '2025-04-02'
 
 - name: Mattify
   status: Dead
@@ -119,6 +132,7 @@
   image: mattify.webp
   weight: -1
   tags: [open-source, gpl]
+  created: '2023-06-06'
 
 - name: Axe Feather
   description: Recreation of an 2004 Flash-based ad using modern web technologies.
@@ -128,6 +142,7 @@
   image: axe-feather.webp
   weight: 2
   tags: [open-source, unlicense_or_cc0, js, games]
+  created: '2021-01-29'
 
 - name: Fnorders
   description: A Fnorders-generator in the style of the Fnorder by Steve Jackson Games.
@@ -137,6 +152,7 @@
   image: fnorders.webp
   weight: 1
   tags: [open-source, gpl, js]
+  created: '2017-09-06'
 
 - name: The Green
   description: Where Dan and his family live.
@@ -144,6 +160,7 @@
   image: thegreen.webp
   weight: 1
   tags: [closed-source, gnss]
+  created: '2020-06-16'
 
 - name: Non-Stop Hammer Ti . me
   status: Dead
@@ -153,6 +170,7 @@
   image: hammertime.webp
   weight: -1
   tags: [open-source, gpl, music]
+  created: '2019-04-03'
 
 - name: We Will Rock . EU
   status: Dead
@@ -162,6 +180,7 @@
   image: rockyou.webp
   weight: -1
   tags: [open-source, gpl, music]
+  created: '2019-06-17'
 
 - name: TRRTL
   description: Coffee-drinking LOGO turtles.
@@ -170,6 +189,7 @@
   image: trrtl.webp
   weight: 1
   tags: [open-source, unlicense_or_cc0, js, programming]
+  created: '2019-02-15'
 
 - name: Break Into Us
   status: Dead
@@ -179,6 +199,7 @@
   image: breakintous.webp
   weight: 1
   tags: [open-source, gpl, games, puzzles, js]
+  created: '2020-04-09'
 
 - name: EGXchange
   description: Digital wallet for Emma GoldCoin.
@@ -188,6 +209,7 @@
   image: egx.webp
   weight: 1
   tags: [open-source, unlicense_or_cc0]
+  created: '2024-09-24'
 
 - name: Bodleian Advent Calendar
   status: Down
@@ -197,6 +219,7 @@
   image: bod-calendar.webp
   weight: -1
   tags: [open-source, gpl, php, js]
+  created: '2018-12-05'
 
 - name: Twee2
   status: Abandoned
@@ -207,6 +230,7 @@
   image: twee2.webp
   weight: -1
   tags: [open-source, gpl, ruby, programming]
+  created: '2015-08-13'
 
 - name: Cheatman
   description: A game of hangman that cheats (while keeping its lies internally-consistent).
@@ -216,6 +240,7 @@
   image: cheatman.webp
   weight: 1
   tags: [open-source, agpl, js, games, puzzles]
+  created: '2019-09-25'
 
 - name: RSSey
   status: Abandoned
@@ -224,6 +249,7 @@
   cssClass: minor
   weight: -1
   tags: [open-source, gpl, rss]
+  created: '2018-03-27'
 
 - name: Power Button
   description: Command-line tool to allow e.g. an Arduino to trigger commands on remote computers.
@@ -234,6 +260,7 @@
   cssClass: minor
   weight: -1
   tags: [open-source, gpl, ruby, programming]
+  created: '2020-02-14'
 
 - name: Geohashing Wiki
   description: Adopted from XKCD, the central resource for geohashers worldwide.
@@ -242,6 +269,7 @@
   image: geohashing.webp
   weight: 1
   tags: [closed-source, php, gnss, games]
+  created: '2020-02-02'
 
 - name: LABS Comic Complete RSS Feed
   description: Re-read the entirey of Aaron Uglum's "LABS" comic in your RSS reader.
@@ -251,6 +279,7 @@
   weight: -1
   cssClass: background-contain
   tags: [open-source, gpl, ruby, rss]
+  created: '2019-07-25'
 
 - name: Pong HW
   description: Reimplentation of Pong designed for ultrawide video walls.
@@ -258,7 +287,9 @@
   about: https://danq.me/2018/11/30/pong/
   image: pong.webp
   weight: -1
+  cssClass: minor
   tags: [open-source, unlicense_or_cc0, js, games]
+  created: '2018-11-29'
 
 - name: Steer!
   status: Abandoned
@@ -267,7 +298,9 @@
   about: https://danq.me/2017/04/28/steer/
   image: steer.webp
   weight: -1
+  cssClass: minor
   tags: [open-source, gpl, js, games]
+  created: '2017-04-21'
 
 - name: MegaMegaMonitor
   status: Dead
@@ -278,6 +311,7 @@
   weight: -1
   cssClass: minor
   tags: [open-source, gpl, ruby, js]
+  created: '2018-06-04'
 
 - name: Lunar Lander
   description: A classic Lunar Lander game.
@@ -288,6 +322,7 @@
   weight: 1
   cssClass: background-bottom
   tags: [open-source, gpl, games]
+  created: '2018-03-02'
 
 - name: Abnib Blogs
   status: Dead
@@ -297,6 +332,7 @@
   weight: -2
   cssClass: minor
   tags: [open-source, gpl, rss]
+  created: '2013-09-10'
 
 - name: Abnib Birthdays
   description: Birthday reminders for Abnib folks.
@@ -307,6 +343,7 @@
   weight: -1
   cssClass: minor
   tags: [open-source, gpl, ruby]
+  created: '2020-09-10'
 
 - name: Monte Carlo Pi
   description: Demonstration of using a Monte Carlo method to calculate Pi. In JavaScript.
@@ -316,6 +353,7 @@
   image: monte-carlo-pi.webp
   weight: 1
   tags: [open-source, unlicense_or_cc0, js, maths]
+  created: '2015-06-14'
 
 - name: Penney's Game
   description: Demonstration of a non-transitive game. The computer will usually win because it has a clever strategy.
@@ -326,6 +364,7 @@
   cssClass: minor
   weight: 1
   tags: [open-source, gpl, games, puzzles]
+  created: '2013-04-09'
 
 - name: KeePass for Opera
   status: Abandoned
@@ -335,6 +374,7 @@
   weight: -2
   cssClass: minor
   tags: [open-source, gpl, js, security]
+  created: '2012-06-17'
 
 - name: Dan's Geocaching Reposter
   description: Plugin and bookmarklet to streamline importing geocaching logs into your WordPress blog, PESOS-style.
@@ -344,6 +384,7 @@
   cssClass: minor
   weight: 1
   tags: [open-source, gpl, php, js, wordpress]
+  created: '2018-09-16'
 
 - name: WordPress Post Kinds RSS Prefixer
   description: WordPress RSS tweak to show the IndieWeb post "kind" as a prefix.
@@ -355,6 +396,7 @@
   cssClass: minor
   weight: 1
   tags: [open-source, php, wordpress, rss]
+  created: '2020-03-01'
 
 - name: Workplace Countdown Timer
   status: Abandoned
@@ -365,6 +407,7 @@
   cssClass: minor
   weight: -1
   tags: [open-source, unlicense_or_cc0, js]
+  created: '2019-09-03'
 
 - name: BBC News RSS Feeds (that don't suck!)
   description: BBC News RSS feeds but with the crap (iPlayer and Sounds links, ads for the app, and duplicate entries) removed, and optionally the sports content too.
@@ -374,6 +417,7 @@
   image: bbc-news-no-sport.webp
   weight: 2
   tags: [open-source, unlicense_or_cc0, ruby, rss]
+  created: '2025-02-07'
 
 - name: CSS-Driven Console Graphics
   status: Abandoned
@@ -383,6 +427,7 @@
   image: css-console-graphics.webp
   cssClass: minor
   tags: [open-source, ruby]
+  created: '2018-12-12'
 
 - name: Google Authenticator CLI
   status: Abandoned
@@ -390,8 +435,8 @@
   source: https://gist.github.com/Dan-Q/9f03057cddbda08ee7dfe4910f686150
   about: https://danq.me/2018/12/10/second-factor-safety-net/
   cssClass: minor
-  cssClass: minor
   tags: [open-source, ruby, security]
+  created: '2018-12-10'
 
 - name: "Sisyphus: The Game"
   description: Terrible implementation of a stupid board game idea
@@ -400,6 +445,7 @@
   source: https://github.com/Dan-Q/sisyphus
   image: sisyphus.webp
   tags: [open-source, mit, js, game]
+  created: '2022-11-21'
 
 - name: CapsulePress
   description: Opinionated Gemini/Spartan/Gopher server with a WordPress backend.
@@ -407,6 +453,7 @@
   about: https://danq.me/2023/09/10/capsulepress/
   image: capsulepress.webp
   tags: [open-source, mit, ruby, wordpress]
+  created: '2023-09-08'
 
 - name: Drawings as WordPress Comments
   description: What if a blog comment... could be a sketch rather than text?
@@ -415,6 +462,7 @@
   about: https://danq.me/2024/08/15/draw-me-a-comment/
   image: wordpress-drawings-as-comments.webp
   tags: [open-source, lgpl, php, js, wordpress]
+  created: '2024-07-31'
 
 - name: Not The Lottery
   description: Visualise how much you're <em>not</em> going to win EuroMillions.
@@ -424,6 +472,7 @@
   image: not-the-lottery.webp
   cssClass: minor
   tags: [open-source, gpl, maths]
+  created: '2024-01-23'
 
 - name: Replacement Population Growth Simulator
   status: Abandoned
@@ -436,6 +485,7 @@
     height: 500
   cssClass: minor
   tags: [open-source, gpl, maths]
+  created: '2023-12-29'
 
 - name: SHA1 Length Extension Attack Demonstration
   description: Length extension attacks are hard to understand. So I made a demonstrative explainer.
@@ -444,6 +494,7 @@
   image: sha1-length-attack-demo-video-screenshot.webp
   weight: 1
   tags: [open-source, php, security]
+  created: '2023-11-29'
 
 - name: PHP4 Transparent Session Demo
   description: PHP4 had a strange feature to try to work around the fact that cookies weren't yet universally supported.
@@ -452,9 +503,10 @@
   weight: -1
   cssClass: minor
   tags: [open-source, mit, php]
+  created: '2022-12-12'
 
 - name: ".well-known/feeds"
-  description: Proposed specification to make RSS (etc.) feeds representing an entire website easier to discover.
+  description: Proposed specification to make it easier to discover RSS (etc.) feeds that represent an entire website.
   url: https://github.com/Dan-Q/well-known-feeds
   source: https://github.com/Dan-Q/well-known-feeds
   about: https://danq.me/2023/08/23/well-known-feeds/
@@ -462,18 +514,94 @@
     url: https://github.com/Dan-Q/well-known-feeds
     width: 1000
   tags: [open-source, unlicense_or_cc0]
+  created: '2023-08-23'
+
+- name: Dan Q - The Podcast
+  description: The podcast that nobody asked for. Exclusively about things that only Dan Q cares about.
+  url: https://danq.me/tag/dancast/
+  screenshot:
+    url: https://danq.me/tag/dancast/#podcast-header
+    width: 1060
+    height: 500
+  cssClass: major background-top
+  weight: 2
+  tags: [closed-source]
+  created: '2024-06-28'
+
+- name: '&lt;embed-html&gt;'
+  description: A HTML web component for dynamic loading of HTML within HTML.
+  url: https://embed-html.danq.dev/
+  source: https://github.com/Dan-Q/embed-html
+  screenshot:
+    url: https://embed-html.danq.dev/
+  tags: [open-source, unlicense_or_cc0, js]
+  created: '2026-03-12'
+
+- name: '&lt;beige-buttons&gt;'
+  description: A reusable web component for adding beige Turbo and Reset buttons to your site.
+  url: https://beige-buttons.danq.dev/
+  source: https://codeberg.org/Dan-Q/beige-buttons
+  about: https://danq.me/2025/11/17/beige-buttons/
+  image: beige-buttons.webp
+  tags: [open-source, unlicense_or_cc0, js]
+  created: '2025-11-17'
+
+- name: 'Best Resolution'
+  description: An 88&times;31 that says the best resolution to use a site is... your current resolution!
+  url: https://best-resolution.danq.dev/
+  source: https://github.com/dan-q/best-resolution
+  about: https://danq.me/2025/10/18/best-viewed-at-your-resolution/
+  inject_html: >
+    <a href="//best-resolution.danq.dev/" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+      <img src="//best-resolution.danq.dev/any.gif" alt="Looks best at: any resolution!" width="176" height="62" style="image-rendering: pixelated;">
+    </a>
+    <script src="//best-resolution.danq.dev/script.js"></script>
+  cssClass: no-top-padding
+  tags: [open-source, unlicense_or_cc0, php, js]
+  created: '2025-10-17'
+
+- name: 'Shadows Out of Time'
+  description: A Bodleian choose-your-own-destiny story.
+  url: https://shadows.danq.me/
+  source: https://github.com/Dan-Q/shadows-out-of-time
+  about: https://danq.me/2018/11/06/shadows-out-of-time/
+  image: shadows-out-of-time.jpg
+  tags: [open-source]
+  created: '2018-11-06'
+
+- name: 'Alt Lightboxes'
+  description: A technique for HTML+CSS-only lightbox popups with alt-text overlays.
+  url: https://alt-lightbox.danq.dev/
+  source: https://github.com/Dan-Q/figure-lightbox-alttext-css
+  screenshot:
+    url: https://alt-lightbox.danq.dev/
+  cssClass: minor
+  tags: [open-source, unlicense_or_cc0]
+  created: '2025-12-11'
+
+- name: 'BeepAlive'
+  description: Keep-alive code to stop speakers from going to sleep... by playing tiny inaudible clicks in the background!
+  url: https://danq.me/2026/08/04/beepalive/
+  source: https://codeberg.org/Dan-Q/BeepAlive
+  image: beepalive.webp
+  cssClass: minor
+  tags: [open-source, unlicense_or_cc0, golang]
+  created: '2026-08-04'
+
+- name: 'ProtonMail Encryption Status for Thunderbird'
+  description: Visual indicator of how your Proton Bridge <-> Thunderbird emails were encrypted.
+  url: https://addons.thunderbird.net/en-GB/thunderbird/addon/protonmail-encryption-status/
+  about: https://danq.me/2020/10/06/thunderbird-protonmail-status-indicators/
+  source: https://github.com/Dan-Q/ProtonMail-Encryption-Indicators-for-Thunderbird
+  image: thunderbird-protonmail-encryption-indicators.webp
+  cssClass: minor
+  status: Abandoned
+  tags: [open-source, gpl, js]
 
 # TODO:
-# - Podcast?
-# - Add <embed-html>
-# - Add Beige Buttons | https://danq.me/2025/11/17/beige-buttons/
-# - Add Shadows Out Of Time
-# - Add https://alt-lightbox.danq.dev/
 # - https://github.com/Dan-Q/outbound-links-json-generator
 # - https://github.com/Dan-Q/picinhtml
 # - You Can't Do It Alone
 # - Geocaching convex hull generation
 # - https://gist.github.com/Dan-Q/8268cf224e3c26c9da8d19d9e59d5752 (footnotes for WP)?
-# - https://danq.me/2026/08/04/beepalive/
-# - https://danq.me/2020/10/06/thunderbird-protonmail-status-indicators/
 # May be more from e.g. https://gist.github.com/Dan-Q?page=3 onwards?

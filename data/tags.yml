@@ -24,6 +24,8 @@
       name: Ruby
     - tag: js
       name: JavaScript
+    - tag: golang
+      name: Go
     - tag: rss
       name: RSS
     - tag: wordpress
