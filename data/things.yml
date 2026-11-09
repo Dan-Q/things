@@ -5,7 +5,7 @@
   screenshot:
     url: https://danq.me/
   cssClass: major
-  weight: 4
+  weight: 5
   tags: [closed-source, php, ruby, wordpress]
 
 - name: Dan Q's Things
@@ -26,6 +26,50 @@
   weight: 2
   tags: [closed-source, js, gnss]
 
+- name: Ascending
+  description: Up the wooden hill with you, even if you're just a pile of tumbling shapes.
+  url: https://ascending.danq.dev/
+  about: https://danq.me/2026/10/25/ascending-wwo/
+  source: https://github.com/Dan-Q/ascending/
+  image: ascending-og.png
+  weight: 1
+  tags: [open-source, unlicense_or_cc0, js, music]
+
+- name: Incognito Mode for Wikipedia
+  description: Does not actually do anything for your privacy or security. Very silly.
+  url: https://incognito.danq.dev/
+  about: https://danq.me/2026/10/23/incognito-wwo/
+  source: https://github.com/Dan-Q/incognito
+  image: incognito-og-980x515.webp
+  weight: 1
+  tags: [open-source, unlicense_or_cc0, js]
+
+- name: Dem Bones!
+  description: Use your mobile phone as a marionnette controller; make the skeleton on your screen dance!
+  url: https://skelly.monster/
+  about: https://danq.me/2026/10/22/dem-bones/
+  source: https://github.com/Dan-Q/dem-bones
+  image: dem-bones-og-980x515.webp
+  weight: 2
+  tags: [open-source, unlicense_or_cc0, games, js]
+
+- name: Origami
+  description: A love letter to the Weird Wide Web. My heart goes out to you.
+  url: https://origami.danq.dev/
+  about: https://danq.me/2026/10/14/origami/
+  source: https://github.com/Dan-Q/origami
+  image: origami-og-980x515.webp
+  weight: 2
+  tags: [open-source, unlicense_or_cc0, js]
+
+- name: Move the mouse across the screen
+  description: A mouse curser [sic] and an example of extreme skeuomorphism?
+  url: https://danq.me/mouse/
+  about: https://danq.me/2026/10/08/weird-mouse/
+  image: mouse-og-980x515.webp
+  weight: 1
+  tags: [closed-source, js]
+
 - name: text/plain blog
   description: Who said a blog needed to be in HTML, anyway?
   url: https://textplain.blog/
@@ -33,7 +77,7 @@
   source: https://github.com/dan-Q/textplain.blog
   image: textplain.webp
   cssClass: background-contain
-  weight: 2
+  weight: 1
   tags: [open-source, unlicense_or_cc0, php]
 
 - name: Mastermind Solver
@@ -42,7 +86,7 @@
   source: https://github.com/Dan-Q/mastermind-solver
   about: https://danq.me/2022/08/24/mastermind-solver/
   image: mastermind.webp
-  weight: 2
+  weight: 1
   tags: [open-source, mit, js, games, puzzles]
 
 - name: DNDle
@@ -305,7 +349,7 @@
   about: https://bbc-feeds.danq.dev/
   url: https://bbc-feeds.danq.dev/
   image: bbc-news-no-sport.webp
-  weight: 1
+  weight: 2
   tags: [open-source, unlicense_or_cc0, ruby, rss]
 
 - name: CSS-Driven Console Graphics
