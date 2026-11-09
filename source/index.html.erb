@@ -91,12 +91,9 @@
           </div>
 
           <ul class="things h-feed">
-            <% data.things.
-              sort_by{|t|(t.status == 'Dead' || t.status == 'Down' ? -3 : 0) + (t.status == 'Abandoned' ? -2 : 0) + (t.weight || 0) + (thing_image(t) ? 1 : 0) + rand}.
-              reverse.
-              each do |thing| %>
-              <% image = thing_image(thing) %>
-              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{image}');\"" if image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
+            <% ordered_things.each do |thing| %>
+              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
+                <%= thing.inject_html if thing.inject_html %>
                 <div class="h-entry-details">
                   <h2 class="p-name">
                     <a href="<%= thing.url || thing.about || thing.source %>" class="u-url" target="_blank">

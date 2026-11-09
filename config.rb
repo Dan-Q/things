@@ -25,6 +25,13 @@ after_build do |builder|
   end
 end
 
+# Holds the one-per-build semi-shuffled ordering, so every front-end sees the same order
+module ThingsOrder
+  class << self
+    attr_accessor :memo
+  end
+end
+
 helpers do
   # The image for a thing: its `image:`, or else its screenshot (if one exists)
   def thing_image(thing)
@@ -32,6 +39,18 @@ helpers do
     return unless thing.screenshot
     file = Screenshots.filename_for('name' => thing.name, 'url' => thing.url, 'screenshot' => thing.screenshot)
     file if File.exist?(File.join(Screenshots::CACHE_DIR, file))
+  end
+
+  # All Things, semi-shuffled (dead/abandoned sink, weighted and imaged ones float up,
+  # plus a random jitter), each with `image` already resolved. Computed once per build.
+  def ordered_things
+    ThingsOrder.memo ||= data.things.map { |thing|
+      image = thing_image(thing)
+      score = (%w[Dead Down].include?(thing.status) ? -3 : 0) +
+              (thing.status == 'Abandoned' ? -2 : 0) +
+              (thing.weight || 0) + (image ? 1 : 0) + rand
+      [score, thing.to_h.merge('image' => image)]
+    }.sort_by(&:first).reverse.map { |_, attrs| Hashie::Mash.new(attrs) }
   end
 end
 

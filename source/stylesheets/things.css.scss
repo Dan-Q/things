@@ -101,8 +101,16 @@ body {
     background-position: top center;
   }
 
+  &.background-top {
+    background-position: top center;
+  }
+
   &.background-bottom {
     background-position: bottom center;
+  }
+
+  &.no-top-padding {
+    padding-top: 0;
   }
 
   &.major {
@@ -161,6 +169,7 @@ body {
     text-transform: uppercase;
     font-size: 80%;
     gap: 0.5rem;
+    overflow-y: scroll;
   }
 
   .tag {
