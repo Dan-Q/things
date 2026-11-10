@@ -94,8 +94,11 @@
 
           <ul class="things h-feed">
             <% ordered_things.each do |thing| %>
-              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %>" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
+              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %><%= ' for-iframe' if thing.iframe %>" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
                 <%= thing.inject_html if thing.inject_html %>
+                <% if thing.iframe %>
+                  <iframe scrolling="no" src="https://danq.me/#front-page-hero" title="Preview of <%= thing.name %>"></iframe>
+                <% end %>
                 <div class="h-entry-details">
                   <h2 class="p-name">
                     <a href="<%= thing.url || thing.about || thing.source %>" class="u-url" target="_blank">
