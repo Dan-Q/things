@@ -204,13 +204,16 @@ body {
     }
 
     iframe {
-      zoom: 0.5;
-      min-height: 310px;
+      /* Render at double size, then scale down to fit. (Not `zoom`, which Safari handles differently.) */
       position: absolute;
-      width: 100%;
-      z-index: 1;
       top: 0;
-      height: 100%;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      min-height: 620px;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+      z-index: 1;
       border: 0;
     }
   }
@@ -431,7 +434,7 @@ footer {
 /* Podcasting */
 
 .h-entry:has(.podcast) .h-entry-details {
-  padding-bottom: 92px;
+  padding-bottom: 81px;
 }
 
 .podcast {
@@ -455,6 +458,6 @@ footer {
   audio {
     grid-area: audio;
     width: 100%;
-    height: 42px;
+    height: 31px;
   }
 }
