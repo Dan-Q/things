@@ -151,6 +151,21 @@ body {
   .h-entry:hover::after, .h-entry:focus-within::after {
     border-color: var(--q-pri);
     border-width: 4px; }
+  .h-entry.for-iframe {
+    overflow: hidden;
+    padding-top: 0; }
+    .h-entry.for-iframe .h-entry-details {
+      margin-top: 10rem;
+      z-index: 2; }
+    .h-entry.for-iframe iframe {
+      zoom: 0.5;
+      min-height: 310px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+      height: 100%;
+      border: 0; }
 
 @-webkit-keyframes things {
   0% {
