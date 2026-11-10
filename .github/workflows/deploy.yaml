@@ -62,9 +62,6 @@ jobs:
       - name: Build Middleman
         run: bundle exec middleman build
 
-      - name: Assign domain name
-        run: echo "things.danq.me" > build/CNAME
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
