@@ -345,6 +345,11 @@ body {
   list-style: none;
   padding: 0;
 
+  .filter-tag label {
+    display: flex;
+    gap: 0.5ch;
+  }
+
   li {
     font-size: 1.2rem;
     font-weight: bold;
@@ -352,7 +357,8 @@ body {
     ul {
       list-style: none;
       margin-top: 4px;
-      padding-left: 2ch;
+      padding: 0;
+      columns: 2;
     }
 
     li {

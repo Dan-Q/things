@@ -15,6 +15,8 @@
       name: Music
     - tag: maths
       name: Mathematics
+    - tag: blogging
+      name: Blogging
 - category: Technologies
   type: checkbox
   tags:
@@ -28,6 +30,8 @@
       name: Go
     - tag: rss
       name: RSS
+    - tag: ssgs
+      name: Static Site Generators
     - tag: wordpress
       name: ClassicPress/WordPress
 - category: License

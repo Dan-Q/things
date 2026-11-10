@@ -7,7 +7,7 @@
   iframe: https://danq.me/#front-page-hero
   cssClass: major
   weight: 5
-  tags: [closed-source, php, ruby, wordpress]
+  tags: [closed-source, php, ruby, wordpress, blogging]
   created: '1998-09-27'
 
 - name: Dan Q's Things
@@ -15,7 +15,7 @@
   url: https://things.danq.me/
   source: https://github.com/dan-q/things
   image: things.png
-  tags: [open-source, agpl, ruby]
+  tags: [open-source, agpl, ruby, rss, ssgs]
   created: '2020-09-07'
 
 - name: Where's Dan Q
@@ -73,7 +73,7 @@
   source: https://github.com/Dan-Q/origami
   image: origami-og-980x515.webp
   weight: 2
-  tags: [open-source, unlicense_or_cc0, js]
+  tags: [open-source, unlicense_or_cc0, js, games]
   created: '2026-10-08'
 
 - name: Move the mouse across the screen
@@ -82,7 +82,7 @@
   about: https://danq.me/2026/10/08/weird-mouse/
   image: mouse-og-980x515.webp
   weight: 1
-  tags: [closed-source, js]
+  tags: [closed-source, js, games]
   created: '2026-10-08'
 
 - name: text/plain blog
@@ -93,7 +93,7 @@
   image: textplain.webp
   cssClass: background-contain
   weight: 1
-  tags: [open-source, unlicense_or_cc0, php]
+  tags: [open-source, unlicense_or_cc0, php, blogging]
   created: '2024-05-02'
 
 - name: Mastermind Solver
@@ -160,7 +160,7 @@
   url: https://thegreen.q-t-a.uk/
   image: thegreen.webp
   weight: 1
-  tags: [closed-source, gnss]
+  tags: [closed-source, gnss, ssgs]
   created: '2020-06-16'
 
 - name: Non-Stop Hammer Ti . me
@@ -332,7 +332,7 @@
   image: abnib.webp
   weight: -2
   cssClass: minor
-  tags: [open-source, gpl, rss]
+  tags: [open-source, gpl, rss, blogging, ssgs]
   created: '2013-09-10'
 
 - name: Abnib Birthdays
@@ -343,7 +343,7 @@
     url: https://abnib.co.uk/
   weight: -1
   cssClass: minor
-  tags: [open-source, gpl, ruby]
+  tags: [open-source, gpl, ruby, ssgs]
   created: '2020-09-10'
 
 - name: Monte Carlo Pi
@@ -364,7 +364,7 @@
   image: penney.webp
   cssClass: minor
   weight: 1
-  tags: [open-source, gpl, games, puzzles]
+  tags: [open-source, gpl, games, puzzles, maths]
   created: '2013-04-09'
 
 - name: KeePass for Opera
@@ -384,7 +384,7 @@
   image: geocaching-reposter.webp
   cssClass: minor
   weight: 1
-  tags: [open-source, gpl, php, js, wordpress]
+  tags: [open-source, gpl, php, js, wordpress, blogging]
   created: '2018-09-16'
 
 - name: WordPress Post Kinds RSS Prefixer
@@ -396,7 +396,7 @@
     width: 1000
   cssClass: minor
   weight: 1
-  tags: [open-source, php, wordpress, rss]
+  tags: [open-source, php, wordpress, rss, blogging]
   created: '2020-03-01'
 
 - name: Workplace Countdown Timer
@@ -417,7 +417,7 @@
   url: https://bbc-feeds.danq.dev/
   image: bbc-news-no-sport.webp
   weight: 2
-  tags: [open-source, unlicense_or_cc0, ruby, rss]
+  tags: [open-source, unlicense_or_cc0, ruby, rss, ssgs]
   created: '2025-02-07'
 
 - name: CSS-Driven Console Graphics
@@ -453,7 +453,7 @@
   source: https://github.com/Dan-Q/CapsulePress
   about: https://danq.me/2023/09/10/capsulepress/
   image: capsulepress.webp
-  tags: [open-source, mit, ruby, wordpress]
+  tags: [open-source, mit, ruby, wordpress, blogging]
   created: '2023-09-08'
 
 - name: Drawings as WordPress Comments
@@ -462,7 +462,7 @@
   source: https://github.com/Dan-Q/q23-drawings-as-wordpress-comments
   about: https://danq.me/2024/08/15/draw-me-a-comment/
   image: wordpress-drawings-as-comments.webp
-  tags: [open-source, lgpl, php, js, wordpress]
+  tags: [open-source, lgpl, php, js, wordpress, blogging]
   created: '2024-07-31'
 
 - name: Not The Lottery
@@ -525,7 +525,7 @@
     width: 1060
     height: 500
   cssClass: major background-top
-  weight: 2
+  weight: 1
   tags: [closed-source]
   created: '2024-06-28'
 
@@ -558,7 +558,7 @@
     </a>
     <script src="//best-resolution.danq.dev/script.js"></script>
   cssClass: no-top-padding
-  tags: [open-source, unlicense_or_cc0, php, js]
+  tags: [open-source, unlicense_or_cc0, php, js, ssgs]
   created: '2025-10-17'
 
 - name: 'Shadows Out of Time'
@@ -567,7 +567,7 @@
   source: https://github.com/Dan-Q/shadows-out-of-time
   about: https://danq.me/2018/11/06/shadows-out-of-time/
   image: shadows-out-of-time.jpg
-  tags: [open-source]
+  tags: [open-source, games]
   created: '2018-11-06'
 
 - name: 'Alt Lightboxes'
@@ -586,7 +586,7 @@
   source: https://codeberg.org/Dan-Q/BeepAlive
   image: beepalive.webp
   cssClass: minor
-  tags: [open-source, unlicense_or_cc0, golang]
+  tags: [open-source, unlicense_or_cc0, golang, music]
   created: '2026-08-04'
 
 - name: 'ProtonMail Encryption Status for Thunderbird'
