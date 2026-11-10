@@ -60,10 +60,10 @@
       <main id="content">
         <section class="site-main">
           <a href="/feed.xml" aria-label="RSS Feed" id="rss"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 512 512"><path d="M368 448q-2-84-41-153T220 186q-69-41-156-42V64q107 2 194 52t138 137q50 86 52 195zm-136 0q-3-75-48-120-46-46-120-48v-80q69 2 125 34 56 31 89 87 32 55 34 127zm-120 0q-20 0-34-14t-14-34 14-34 34-14 34 14 14 34-14 34-34 14"/></svg></a>
-          <button id="filters-button" popovertarget="filters-popup"><span>Filters</span></button>
-          <div id="filters-popup" popover>
+          <button id="filters-button" popovertarget="filters-popup"><span><svg style="height: 0.75rem;" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" stroke="#000" viewBox="0 0 512 512"><path d="M469.3 0H42.7c-9.3 0-16.8 7.5-16.8 16.8v47c0 9.3 7.5 16.8 16.8 16.8H65l34.3 40a73.5 73.5 0 1 0 95.2 110.8L214 254v241.2a16.8 16.8 0 0 0 27.4 13l50.5-41.3c3.9-3.2 6.1-8 6.1-13V254L447 80.6h22.3c9.3 0 16.8-7.5 16.8-16.7V16.8A17 17 0 0 0 469.3 0zM141 221.2a40 40 0 0 1-19.4-74.9l51 59.4a40 40 0 0 1-31.6 15.5z"/></svg> Filters</span></button>
+          <form id="filters-popup" popover>
             <p>
-              Only Things matching <em>all</em> selected filters will be shown:
+              Only <em>Things</em> matching <em>all</em> selected filters will be shown:
             </p>
             <ul class="filters">
               <% data.tags.each do |cat| %>
@@ -82,7 +82,14 @@
                       <li class="filter-tag">
                         <label>
                           <input type="<%= cat.type %>" name="filter-category-<%= cat.category %>" data-tag="<%= tag.tag %>" value="1">
-                          <%= tag.name %>
+                          <span>
+                            <%= tag.name %>
+                            <% if tag.description %>
+                              <small class="filter-tag-description">
+                                <%= tag.description %>
+                              </small>
+                            <% end %>
+                          </span>
                         </label>
                       </li>
                     <% end %>
@@ -90,11 +97,14 @@
                 </li>
               <% end %>
             </ul>
-          </div>
+            <p>
+              <button type="reset">Reset filters</button>
+            </p>
+          </form>
 
           <ul class="things h-feed">
             <% ordered_things.each do |thing| %>
-              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %><%= ' for-iframe' if thing.iframe %>" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %> data-tags="<%= thing.tags.join(' ') if thing.tags %>">
+              <li class="h-entry<%= " #{thing.cssClass}" if thing.cssClass %><%= ' for-iframe' if thing.iframe %>" <%= " style=\"background-image: url('images/#{thing.image}');\"" if thing.image %> data-tags="<%= thing.tags.join(' ') if thing.tags %> <%= thing.status ? thing.status.downcase : 'no-status' %>">
                 <%= thing.inject_html if thing.inject_html %>
                 <% if thing.iframe %>
                   <iframe scrolling="no" src="https://danq.me/#front-page-hero" title="Preview of <%= thing.name %>"></iframe>
@@ -113,13 +123,13 @@
                       <li class="tag p-category"><%= thing.status %></li>
                     <% end %>
                     <% if thing.url && thing.about %>
-                      <li class="tag"><a href="<%= thing.about %>" target="_blank">about</a></li>
+                      <li class="tag"><a href="<%= thing.about %>" target="_blank" aria-title="About"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="#fff" stroke="#fff" viewBox="0 0 512 512"><path d="M306 156q-9-9-23-13a82 82 0 0 0-55 0q-13 5-23 13-9 9-15 22-5 13-5 28h44q0-12 6-20 7-8 21-8 12 0 20 8a28 28 0 0 1 4 31q-2 6-7 12l-21 27c-4 6-17 23-17 40v10h45v-7l1-9 9-13 21-28q8-10 12-20t4-23q1-16-5-29-6-12-16-21zm-72 173h47v45h-47z" class="st0"/><path d="M256 0a256 256 0 1 0 0 512 256 256 0 0 0 0-512zm0 448a192 192 0 1 1 0-384 192 192 0 0 1 0 384z" class="st0"/></svg><span>about</span></a></li>
                     <% end %>
                     <% if (thing.url || thing.about) && thing.source %>
-                      <li class="tag"><a href="<%= thing.source %>" target="_blank">source</a></li>
+                      <li class="tag"><a href="<%= thing.source %>" target="_blank" aria-title="Source"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><path fill="#fff" d="M5.1 4.7a2.5 2.5 0 1 0-2.1 0v6.5a2.5 2.5 0 1 0 2 0V7.4l2 2.1h2.7a2.5 2.5 0 1 0 0-2H8z"/></svg><span>source</span></a></li>
                     <% end %>
                     <% if thing.rss %>
-                      <li class="tag"><a href="<%= thing.rss %>" target="_blank">RSS</a></li>
+                      <li class="tag"><a href="<%= thing.rss %>" target="_blank" aria-title="RSS"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 512 512"><path d="M368 448q-2-84-41-153T220 186q-69-41-156-42V64q107 2 194 52t138 137q50 86 52 195zm-136 0q-3-75-48-120-46-46-120-48v-80q69 2 125 34 56 31 89 87 32 55 34 127zm-120 0q-20 0-34-14t-14-34 14-34 34-14 34 14 14 34-14 34-34 14"></path></svg><span>RSS</span></a></li>
                     <% end %>
                   </ul>
                   <% if thing.podcast_episode %>

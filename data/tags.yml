@@ -34,6 +34,18 @@
       name: Static Site Generators
     - tag: wordpress
       name: ClassicPress/WordPress
+- category: Health
+  type: radio
+  tags:
+    - tag: no-status
+      name: Healthy
+      description: Projects that should still work today.
+    - tag: abandoned
+      name: Abandoned
+      description: Unmaintained projects that you might be able to make use of.
+    - tag: dead
+      name: Dead
+      description: Older and broken projects that probably won't work.
 - category: License
   type: radio
   tags:

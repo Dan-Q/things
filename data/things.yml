@@ -195,7 +195,7 @@
   created: '2019-02-15'
 
 - name: Break Into Us
-  status: Dead
+  status: Abandoned
   description: Lock-breaking puzzle game.
   source: https://github.com/Dan-Q/Break-Into-Us
   about: https://danq.me/2020/06/27/break-into-us/
