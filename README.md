@@ -38,8 +38,8 @@ At build time, Puppeteer screenshots the page into `screenshots/` (cache; ignore
 
 ## License
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
-- **[GPL v3 license](https://www.gnu.org/licenses/gpl-3.0)**
+- **[AGPL v3 license](https://www.gnu.org/licenses/agpl-3.0)**
 - Includes fonts from Google Fonts licensed under [SIL OFL](https://opensource.org/licenses/OFL-1.1)
 - Copyright 2020 © <a href="https://danq.me/">Dan Q</a>
