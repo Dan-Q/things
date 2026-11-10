@@ -118,7 +118,23 @@
                     <% if (thing.url || thing.about) && thing.source %>
                       <li class="tag"><a href="<%= thing.source %>" target="_blank">source</a></li>
                     <% end %>
+                    <% if thing.rss %>
+                      <li class="tag"><a href="<%= thing.rss %>" target="_blank">RSS</a></li>
+                    <% end %>
                   </ul>
+                  <% if thing.podcast_episode %>
+                    <div class="podcast">
+                      <span>
+                        Latest episode:
+                      </span>
+                      <span>
+                        <a class="tag" href="<%= thing.podcast_episode.link %>" target="_blank">
+                          <%= thing.podcast_episode.title %>
+                        </a>
+                      </span>
+                      <audio controls preload="none" src="<%= thing.podcast_episode.enclosure %>"></audio>
+                    </div>
+                  <% end %>
                 </div>
               </li>
             <% end %>

@@ -8,6 +8,7 @@ end
 # Screenshots: things with `screenshot:` instead of `image:` get a (cached)
 # Puppeteer screenshot, which is copied into the build's images/ directory
 require_relative 'lib/screenshots'
+require_relative 'lib/podcast'
 
 screenshot_files = {}
 
@@ -42,14 +43,17 @@ helpers do
   end
 
   # All Things, semi-shuffled (dead/abandoned sink, weighted and imaged ones float up,
-  # plus a random jitter), each with `image` already resolved. Computed once per build.
+  # plus a random jitter), each with `image` already resolved and, for things with a
+  # `podcast:` feed, `latest_episode` (title, link, enclosure) fetched from it. Computed once per build.
   def ordered_things
     ThingsOrder.memo ||= data.things.map { |thing|
       image = thing_image(thing)
       score = (%w[Dead Down].include?(thing.status) ? -3 : 0) +
               (thing.status == 'Abandoned' ? -2 : 0) +
               (thing.weight || 0) + (image ? 1 : 0) + rand
-      [score, thing.to_h.merge('image' => image, 'created' => (thing.created || '2020-09-07').to_time)]
+      attrs = thing.to_h.merge('image' => image, 'created' => (thing.created || '2020-09-07').to_time)
+      attrs['podcast_episode'] = Podcast.latest_episode(thing.podcast) if thing.podcast
+      [score, attrs]
     }.sort_by(&:first).reverse.map { |_, attrs| Hashie::Mash.new(attrs) }
   end
 end

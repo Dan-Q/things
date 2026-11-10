@@ -154,6 +154,10 @@ body {
   h2 {
     font-size: 1.2rem;
     margin: 0;
+
+    a {
+      color: #000;
+    }
   }
 
   p {
@@ -166,13 +170,13 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    text-transform: uppercase;
-    font-size: 80%;
     gap: 0.5rem;
     overflow-y: scroll;
   }
 
   .tag {
+    text-transform: uppercase;
+    font-size: 80%;
     background: var(--alt2-bg);
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
@@ -422,4 +426,35 @@ footer {
 @keyframes blinky-caret {
   from, to { border-color: transparent }
   50% { border-color: lightgray }
+}
+
+/* Podcasting */
+
+.h-entry:has(.podcast) .h-entry-details {
+  padding-bottom: 92px;
+}
+
+.podcast {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template: "text link" min-content "audio audio" min-content / auto 1fr;
+  width: 100%;
+  left: 0;
+  gap: 1ch 0;
+  font-size: 1rem;
+  overflow: hidden;
+  padding-top: 7px;
+  border-top: 1px solid #0004;
+
+  span {
+    margin-left: 16px;
+    white-space: nowrap;
+  }
+
+  audio {
+    grid-area: audio;
+    width: 100%;
+    height: 42px;
+  }
 }
